@@ -1,9 +1,7 @@
-from task_generation import TaskGenerator
+from .schedule_algorithm import ScheduleAlgorithm
 
 
-class EDF:
-    def __init__(self, task_generator) -> None:
-        self.task_generator: TaskGenerator = task_generator
+class EDF(ScheduleAlgorithm):
 
     def run(self):
         print("Running EDF")
