@@ -7,13 +7,12 @@ class Scheduler:
         self.algorithm: ScheduleAlgorithm = algorithm
         self.starting_task_list = task_list
         self.task_list = task_list
-        self.timer = -1
+        self.timer = 0
         self.num_done_tasks = 0
         self.num_expired_tasks = 0
 
     def run(self):
         print(f"Running {self.algorithm}")
-        expired_tasks = set()
 
         while True:
             # next time unit
@@ -29,7 +28,10 @@ class Scheduler:
                 break
 
             # select task
-            selected_task = self.algorithm.choose_task(self.task_list)
+            selected_task = self.algorithm.get_task_list(self.task_list)[0]
+
+            selected_task.run()
+            print("Done task: ", selected_task)
 
             # remove task from queue if done
             if selected_task.is_done():
@@ -37,8 +39,6 @@ class Scheduler:
                 self.num_done_tasks += 1
                 continue
 
-            print("Doing task: ", selected_task)
-            selected_task.run()
 
         print(f"Done EDF in {self.timer} time unit")
         print(f"Number of done tasks: {self.num_done_tasks}")
