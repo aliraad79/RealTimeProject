@@ -1,10 +1,7 @@
 from abc import ABC
-from task_generation.task_generation import TaskGenerator
+from task import Task
 
 
 class ScheduleAlgorithm(ABC):
-    def __init__(self, task_generator) -> None:
-        self.task_generator: TaskGenerator = task_generator
-
-    def run(self):
+    def choose_task(self, task_list:list[Task]) -> Task:
         ...
