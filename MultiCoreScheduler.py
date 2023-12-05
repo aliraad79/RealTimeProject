@@ -34,7 +34,7 @@ class MultiCoreScheduler:
             self.task_list = [i for i in self.task_list if not i.is_expired(self.timer)]
 
             # break if everything is finished
-            if len(self.task_list) == 0:
+            if len(self.task_list) == 0 and len([j for j in self.processors if j.is_busy()]) == 0:
                 break
 
             # select task
@@ -45,18 +45,22 @@ class MultiCoreScheduler:
             for idx, i in enumerate(non_busy_processors):
                 if len(task_list) > idx:
                     i.assign_task(task_list[idx])
+                    self.task_list.remove(i.assigned_task)
 
             # run assigned task
             busy_processors = [j for j in self.processors if j.is_busy()]
             for proc in busy_processors:
                 print(f"Doing task: {proc.assigned_task} on processor {proc}")
                 proc.run()
+
+                if proc.assigned_task.is_expired(self.timer):
+                    self.num_expired_tasks += 1
+                    proc.task_done()
+
                 # remove finished task from processor and queue
-                if proc.assigned_task.is_done():
-                    self.task_list.remove(proc.assigned_task)
+                elif proc.assigned_task.is_done():
                     self.num_done_tasks += 1
                     proc.task_done()
-                    continue
 
         print(f"Done EDF in {self.timer} time unit")
         print(f"Number of done tasks: {self.num_done_tasks}")

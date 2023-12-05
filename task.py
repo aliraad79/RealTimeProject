@@ -29,7 +29,7 @@ class Task:
         return self.remaining_executation_time == 0
 
     def is_expired(self, current_time):
-        return self.deadline < current_time
+        return self.deadline <= current_time
 
 
     def __str__(self) -> str:
