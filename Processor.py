@@ -17,6 +17,12 @@ class Processor:
     def task_done(self):
         self.assigned_task = None
         self.state = ProcessorState.IDLE
+    
+    def is_overrun(self):
+        return self.state == ProcessorState.OVERRUN
+
+    def is_host(self):
+        return self.state == ProcessorState.HOST
 
     def run(self):
         self.assigned_task.run()
@@ -28,3 +34,5 @@ class Processor:
 class ProcessorState(Enum):
     BUSY = 0
     IDLE = 1
+    OVERRUN = 2
+    HOST = 3

@@ -10,9 +10,9 @@ class Priority(Enum):
 class Task:
     def __init__(
         self,
-        deadline,
         executation_time,
-        priority: Priority = Priority.LOW,
+        deadline,
+        priority: Priority,
         activation_time: int = 0,
     ) -> None:
         self.id = uuid4()
@@ -31,9 +31,8 @@ class Task:
     def is_expired(self, current_time):
         return self.deadline <= current_time
 
-
     def __str__(self) -> str:
-        return f"Task<{str(self.id)[0:5]}, deadline={self.deadline}, remaining_time={self.remaining_executation_time}>"
+        return f"Task<deadline={self.deadline}, executation_time={self.remaining_executation_time}, Priority={self.priority}>"
 
     def __repr__(self) -> str:
         return self.__str__()
