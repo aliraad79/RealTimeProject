@@ -1,20 +1,19 @@
 from task import Task
 from algorithm.edf import EDF
-from Scheduler import Scheduler
-from uunifast import generate_task_set
-from MultiCoreScheduler import MultiCoreScheduler
+from algorithm.wfd import WFD
+from algorithm.ffd import FFD
 
-utilization = 4
-num_tasks = 5
+from uunifast import generate_task_set
+
+num_processes = 8
+utilization = num_processes * 0.5
+num_tasks = 20  # TODO
 num_sets = 1
 hc_to_lc_ratio = 1 / 0.5
 task_sets = generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio)
-print(task_sets)
 
-# single core
-# god_class = Scheduler(EDF(), tasks)
-# god_class.run()
 
-# Multi Core
-# scheduler = MultiCoreScheduler(EDF(), tasks, 8)
-# scheduler.run()
+for tasks in task_sets:
+    print(f"For task set : {tasks}")
+    WFD(num_processes, tasks)
+    FFD(num_processes, tasks)

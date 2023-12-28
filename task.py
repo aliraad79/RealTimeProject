@@ -9,16 +9,12 @@ class Priority(Enum):
 
 class Task:
     def __init__(
-        self,
-        executation_time,
-        deadline,
-        priority: Priority,
-        activation_time: int = 0,
+        self, executation_time, deadline, utilization, priority: Priority
     ) -> None:
         self.id = uuid4()
         self.priority = priority
-        self.activation_time = activation_time
         self.deadline = deadline
+        self.utilization = utilization
         self.executation_time = executation_time
         self.remaining_executation_time = executation_time
 
@@ -32,7 +28,7 @@ class Task:
         return self.deadline <= current_time
 
     def __str__(self) -> str:
-        return f"Task<deadline={self.deadline}, executation_time={self.remaining_executation_time}, Priority={self.priority}>"
+        return f"Task<{str(self.id)[:5]}, utilization={self.utilization}>"
 
     def __repr__(self) -> str:
         return self.__str__()
