@@ -17,3 +17,6 @@ for tasks in task_sets:
     print(f"For task set : {tasks}")
     WFD(num_processes, tasks)
     FFD(num_processes, tasks)
+    WFD(num_processes, tasks, advance_mode=True)
+    FFD(num_processes, tasks, advance_mode=True)
+    

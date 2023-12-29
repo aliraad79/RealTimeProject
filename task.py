@@ -26,6 +26,9 @@ class Task:
 
     def is_expired(self, current_time):
         return self.deadline <= current_time
+    
+    def is_high_priority(self):
+        return self.priority == Priority.HIGH
 
     def __str__(self) -> str:
         return f"Task<{str(self.id)[:5]}, utilization={self.utilization}>"
