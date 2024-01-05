@@ -9,7 +9,7 @@ class Priority(Enum):
 
 class Task:
     def __init__(
-        self, executation_time, deadline, utilization, priority: Priority
+        self, executation_time, deadline, utilization, priority: Priority, tmr_group=None
     ) -> None:
         self.id = uuid4()
         self.priority = priority
@@ -17,6 +17,8 @@ class Task:
         self.utilization = utilization
         self.executation_time = executation_time
         self.remaining_executation_time = executation_time
+        self.tmr_group = tmr_group
+        self.result = False
 
     def run(self, unit=1):
         self.remaining_executation_time -= unit
@@ -29,6 +31,9 @@ class Task:
     
     def is_high_priority(self):
         return self.priority == Priority.HIGH
+    
+    def get_result(self):
+        return (self.tmr_group, self.is_done())
 
     def __str__(self) -> str:
         return f"Task<{str(self.id)[:5]}, utilization={self.utilization}>"

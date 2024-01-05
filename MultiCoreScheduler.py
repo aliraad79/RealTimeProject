@@ -7,7 +7,7 @@ class MultiCoreScheduler:
     def __init__(
         self,
         algorithm: ScheduleAlgorithm,
-        task_list: list[Task],
+        task_list: list,
         num_processors: int = 8,
     ) -> None:
         self.algorithm: ScheduleAlgorithm = algorithm
