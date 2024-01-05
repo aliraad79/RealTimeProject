@@ -3,7 +3,7 @@ from collections import defaultdict
 
 
 def WFD(number_of_processor, task_list: list, advance_mode=False):
-    sorted_tasks = sorted(task_list, key=lambda x: x.utilization, reverse=True)
+    sorted_tasks:list[Task] = sorted(task_list, key=lambda x: x.utilization, reverse=True)
 
     assigned_processes = {i: 1 for i in range(number_of_processor)}
     allocation = defaultdict(list)
