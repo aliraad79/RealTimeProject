@@ -3,13 +3,15 @@ from collections import defaultdict
 
 
 def WFD(number_of_processor, task_list: list, advance_mode=False):
-    sorted_tasks:list[Task] = sorted(task_list, key=lambda x: x.utilization, reverse=True)
+    sorted_tasks: list[Task] = sorted(
+        task_list, key=lambda x: x.utilization, reverse=True
+    )
 
-    assigned_processes = {i: 1 for i in range(number_of_processor)}
+    assigned_processes = {i: 1 for i in range(number_of_processor + 1)}
     allocation = defaultdict(list)
     for task_idx, task in enumerate(sorted_tasks):
         worst_inx = -1
-        for j in range(number_of_processor):
+        for j in range(number_of_processor + 1):
             if not advance_mode:
                 if assigned_processes[j] > task.utilization:
                     if worst_inx == -1:
