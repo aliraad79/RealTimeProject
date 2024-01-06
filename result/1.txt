@@ -1,0 +1,46 @@
+For task set : [7a39e, 97777, 2dbbc, d5f44, 4a6f3, 0ea81, ab1a9, 7ba45, 82ad9, b5a40, a17b8, acc4c, 347be, 2a939, 51b8b, 98242, f7002, 7485c, 5054f, 4e1ca, 591db, 69193, e599f, 151e4, 105b2, e3a29, 32065, 10dce, 46c19, feb5e, 56225, a5a4f, d7638, 8213a, 186d7, 14d36, 47bf1, c0243, 91866, 07e8c, 41ce9, 43abb, 4d1a0, 51197, 6031f, c3ae5, a4aaf, 16f73, 9d3c6, 1d690, d9ef4, f29a6, 6a97c, d830a, bef4a, 00131, fcc0d, c1699, 951dc, b8b05]
+Allocation with WFD:
+processor -> task utilizations
+0 -> [7a39e, 56225, c1699]
+1 -> [97777, a5a4f, 951dc]
+2 -> [2dbbc, d7638, b8b05]
+3 -> [d5f44, 347be, 105b2]
+4 -> [4a6f3, 2a939, e3a29]
+5 -> [0ea81, 51b8b, 32065]
+6 -> [ab1a9, b5a40, 69193, bef4a]
+7 -> [7ba45, a17b8, e599f, 00131]
+8 -> [82ad9, acc4c, 151e4, fcc0d]
+Allocation with FFD:
+processor -> task utilizations
+0 -> [7a39e, 56225, bef4a, 00131]
+1 -> [97777, a5a4f, fcc0d, c1699]
+2 -> [2dbbc, d7638, 951dc, b8b05]
+3 -> [d5f44, b5a40, 10dce]
+4 -> [4a6f3, a17b8, 46c19]
+5 -> [0ea81, acc4c, feb5e]
+6 -> [ab1a9, 347be, 69193]
+7 -> [7ba45, 2a939, e599f]
+8 -> [82ad9, 51b8b, 151e4]
+Allocation with advance WFD:
+processor -> task utilizations
+0 -> [7a39e, 69193, f29a6]
+1 -> [97777, e599f, 6a97c]
+2 -> [2dbbc, 151e4, d830a]
+3 -> [d5f44, 347be, 5054f, c1699]
+4 -> [4a6f3, 2a939, 4e1ca, 951dc]
+5 -> [0ea81, 51b8b, 591db, b8b05]
+6 -> [ab1a9, b5a40, 98242, 47bf1]
+7 -> [7ba45, a17b8, f7002, c0243]
+8 -> [82ad9, acc4c, 7485c, 91866]
+Allocation with advance FFD:
+processor -> task utilizations
+0 -> [7a39e, d5f44, c1699, 951dc, b8b05]
+1 -> [97777, 4a6f3]
+2 -> [2dbbc, 0ea81]
+3 -> [ab1a9, 7ba45, 347be, 47bf1, f29a6]
+4 -> [82ad9, b5a40, 2a939, 51b8b, 5054f]
+5 -> [a17b8, acc4c, 98242, f7002, 7485c, 4e1ca, c0243, 6a97c]
+6 -> [591db, 69193, e599f, 151e4, 105b2, 56225, 91866, d830a]
+7 -> [e3a29, 32065, 10dce, 46c19, feb5e, a5a4f, d7638, 9d3c6, bef4a, 00131, fcc0d]
+8 -> [8213a, 186d7, 14d36, 07e8c, 41ce9, 43abb, 4d1a0, 51197, 6031f, c3ae5, a4aaf, 16f73, 1d690, d9ef4]
+Final Results after Majority Voting: {1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False, 17: False, 18: False, 19: False, 20: False}

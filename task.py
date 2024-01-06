@@ -35,7 +35,7 @@ class Task:
         return (self.tmr_group, self.is_done())
 
     def __str__(self) -> str:
-        return f"Task<{str(self.id)[:5]}, utilization={self.utilization}>"
+        return f"{str(self.id)[:5]}"
 
     def __repr__(self) -> str:
         return self.__str__()
