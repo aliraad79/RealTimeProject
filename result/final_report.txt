@@ -1,0 +1,46 @@
+For task set : [<5b989, 0.136655, Priority.HIGH>, <0027b, 0.136655, Priority.HIGH>, <d4683, 0.136655, Priority.HIGH>, <dfd1b, 0.041013, Priority.LOW>, <ac3a5, 0.041013, Priority.LOW>, <d6b3d, 0.041013, Priority.LOW>, <82d6c, 0.277706, Priority.HIGH>, <8ed5d, 0.277706, Priority.HIGH>, <2a3c3, 0.277706, Priority.HIGH>, <1413f, 0.408287, Priority.LOW>, <123bf, 0.408287, Priority.LOW>, <231d0, 0.408287, Priority.LOW>, <9cf1f, 0.161456, Priority.HIGH>, <99e67, 0.161456, Priority.HIGH>, <fb4d5, 0.161456, Priority.HIGH>, <8794e, 0.080161, Priority.LOW>, <4f436, 0.080161, Priority.LOW>, <0cbbb, 0.080161, Priority.LOW>, <8eb3c, 0.164999, Priority.HIGH>, <c3fb9, 0.164999, Priority.HIGH>, <0bd6c, 0.164999, Priority.HIGH>, <482cf, 0.120716, Priority.LOW>, <51d56, 0.120716, Priority.LOW>, <2a764, 0.120716, Priority.LOW>, <2633a, 0.105024, Priority.HIGH>, <c945f, 0.105024, Priority.HIGH>, <57afb, 0.105024, Priority.HIGH>, <3a384, 0.023847, Priority.LOW>, <99c6a, 0.023847, Priority.LOW>, <6e7c6, 0.023847, Priority.LOW>, <e83db, 0.034302, Priority.HIGH>, <fadbd, 0.034302, Priority.HIGH>, <23913, 0.034302, Priority.HIGH>, <e929e, 0.623831, Priority.LOW>, <df1cf, 0.623831, Priority.LOW>, <f83bb, 0.623831, Priority.LOW>, <c67ba, 0.14211, Priority.HIGH>, <3a814, 0.14211, Priority.HIGH>, <f76a6, 0.14211, Priority.HIGH>, <2f61b, 0.170024, Priority.LOW>, <32b83, 0.170024, Priority.LOW>, <b0a8f, 0.170024, Priority.LOW>, <739ae, 0.018761, Priority.HIGH>, <08328, 0.018761, Priority.HIGH>, <2a4eb, 0.018761, Priority.HIGH>, <1956a, 0.111256, Priority.LOW>, <35dbf, 0.111256, Priority.LOW>, <222e1, 0.111256, Priority.LOW>, <1db2f, 0.971521, Priority.HIGH>, <4a2e9, 0.971521, Priority.HIGH>, <faa1b, 0.971521, Priority.HIGH>, <b3cb1, 0.275892, Priority.LOW>, <99606, 0.275892, Priority.LOW>, <06712, 0.275892, Priority.LOW>, <16513, 0.025777, Priority.HIGH>, <6b441, 0.025777, Priority.HIGH>, <c85d3, 0.025777, Priority.HIGH>, <60fd4, 0.106651, Priority.LOW>, <9cbeb, 0.106651, Priority.LOW>, <05555, 0.106651, Priority.LOW>]
+Allocation with WFD:
+processor -> task utilizations
+0 -> [<5b989, 0.136655, Priority.HIGH>, <b3cb1, 0.275892, Priority.LOW>]
+1 -> [<0027b, 0.136655, Priority.HIGH>, <99606, 0.275892, Priority.LOW>]
+2 -> [<d4683, 0.136655, Priority.HIGH>, <06712, 0.275892, Priority.LOW>]
+3 -> [<dfd1b, 0.041013, Priority.LOW>, <9cf1f, 0.161456, Priority.HIGH>, <739ae, 0.018761, Priority.HIGH>, <60fd4, 0.106651, Priority.LOW>]
+4 -> [<ac3a5, 0.041013, Priority.LOW>, <99e67, 0.161456, Priority.HIGH>, <08328, 0.018761, Priority.HIGH>, <9cbeb, 0.106651, Priority.LOW>]
+5 -> [<d6b3d, 0.041013, Priority.LOW>, <fb4d5, 0.161456, Priority.HIGH>, <2a4eb, 0.018761, Priority.HIGH>, <05555, 0.106651, Priority.LOW>]
+6 -> [<82d6c, 0.277706, Priority.HIGH>, <1413f, 0.408287, Priority.LOW>, <8794e, 0.080161, Priority.LOW>, <2633a, 0.105024, Priority.HIGH>]
+7 -> [<8ed5d, 0.277706, Priority.HIGH>, <123bf, 0.408287, Priority.LOW>, <4f436, 0.080161, Priority.LOW>, <c945f, 0.105024, Priority.HIGH>]
+8 -> [<2a3c3, 0.277706, Priority.HIGH>, <231d0, 0.408287, Priority.LOW>, <0cbbb, 0.080161, Priority.LOW>, <57afb, 0.105024, Priority.HIGH>]
+Allocation with FFD:
+processor -> task utilizations
+0 -> [<5b989, 0.136655, Priority.HIGH>, <b3cb1, 0.275892, Priority.LOW>]
+1 -> [<0027b, 0.136655, Priority.HIGH>, <99606, 0.275892, Priority.LOW>]
+2 -> [<d4683, 0.136655, Priority.HIGH>, <06712, 0.275892, Priority.LOW>]
+3 -> [<dfd1b, 0.041013, Priority.LOW>, <1413f, 0.408287, Priority.LOW>, <739ae, 0.018761, Priority.HIGH>]
+4 -> [<ac3a5, 0.041013, Priority.LOW>, <123bf, 0.408287, Priority.LOW>, <08328, 0.018761, Priority.HIGH>]
+5 -> [<d6b3d, 0.041013, Priority.LOW>, <231d0, 0.408287, Priority.LOW>, <2a4eb, 0.018761, Priority.HIGH>]
+6 -> [<82d6c, 0.277706, Priority.HIGH>, <8ed5d, 0.277706, Priority.HIGH>, <8794e, 0.080161, Priority.LOW>]
+7 -> [<2a3c3, 0.277706, Priority.HIGH>, <9cf1f, 0.161456, Priority.HIGH>, <99e67, 0.161456, Priority.HIGH>, <1db2f, 0.971521, Priority.HIGH>]
+8 -> [<fb4d5, 0.161456, Priority.HIGH>, <4f436, 0.080161, Priority.LOW>, <0cbbb, 0.080161, Priority.LOW>, <8eb3c, 0.164999, Priority.HIGH>, <c3fb9, 0.164999, Priority.HIGH>, <1956a, 0.111256, Priority.LOW>]
+Allocation with advance WFD:
+processor -> task utilizations
+0 -> [<5b989, 0.136655, Priority.HIGH>, <e929e, 0.623831, Priority.LOW>, <1956a, 0.111256, Priority.LOW>]
+1 -> [<0027b, 0.136655, Priority.HIGH>, <df1cf, 0.623831, Priority.LOW>, <35dbf, 0.111256, Priority.LOW>]
+2 -> [<d4683, 0.136655, Priority.HIGH>, <f83bb, 0.623831, Priority.LOW>, <222e1, 0.111256, Priority.LOW>]
+3 -> [<dfd1b, 0.041013, Priority.LOW>, <9cf1f, 0.161456, Priority.HIGH>, <e83db, 0.034302, Priority.HIGH>, <739ae, 0.018761, Priority.HIGH>, <16513, 0.025777, Priority.HIGH>]
+4 -> [<ac3a5, 0.041013, Priority.LOW>, <99e67, 0.161456, Priority.HIGH>, <fadbd, 0.034302, Priority.HIGH>, <08328, 0.018761, Priority.HIGH>, <6b441, 0.025777, Priority.HIGH>]
+5 -> [<d6b3d, 0.041013, Priority.LOW>, <fb4d5, 0.161456, Priority.HIGH>, <23913, 0.034302, Priority.HIGH>, <2a4eb, 0.018761, Priority.HIGH>, <c85d3, 0.025777, Priority.HIGH>]
+6 -> [<82d6c, 0.277706, Priority.HIGH>, <1413f, 0.408287, Priority.LOW>, <8794e, 0.080161, Priority.LOW>, <2633a, 0.105024, Priority.HIGH>, <c67ba, 0.14211, Priority.HIGH>]
+7 -> [<8ed5d, 0.277706, Priority.HIGH>, <123bf, 0.408287, Priority.LOW>, <4f436, 0.080161, Priority.LOW>, <c945f, 0.105024, Priority.HIGH>, <3a814, 0.14211, Priority.HIGH>]
+8 -> [<2a3c3, 0.277706, Priority.HIGH>, <231d0, 0.408287, Priority.LOW>, <0cbbb, 0.080161, Priority.LOW>, <57afb, 0.105024, Priority.HIGH>, <f76a6, 0.14211, Priority.HIGH>]
+Allocation with advance FFD:
+processor -> task utilizations
+0 -> [<5b989, 0.136655, Priority.HIGH>, <82d6c, 0.277706, Priority.HIGH>, <e929e, 0.623831, Priority.LOW>]
+1 -> [<0027b, 0.136655, Priority.HIGH>, <8ed5d, 0.277706, Priority.HIGH>, <df1cf, 0.623831, Priority.LOW>]
+2 -> [<d4683, 0.136655, Priority.HIGH>, <2a3c3, 0.277706, Priority.HIGH>, <f83bb, 0.623831, Priority.LOW>]
+3 -> [<dfd1b, 0.041013, Priority.LOW>, <ac3a5, 0.041013, Priority.LOW>, <8794e, 0.080161, Priority.LOW>, <739ae, 0.018761, Priority.HIGH>]
+4 -> [<d6b3d, 0.041013, Priority.LOW>, <1413f, 0.408287, Priority.LOW>, <9cf1f, 0.161456, Priority.HIGH>, <99e67, 0.161456, Priority.HIGH>, <1956a, 0.111256, Priority.LOW>]
+5 -> [<123bf, 0.408287, Priority.LOW>, <231d0, 0.408287, Priority.LOW>, <fb4d5, 0.161456, Priority.HIGH>, <4f436, 0.080161, Priority.LOW>, <0cbbb, 0.080161, Priority.LOW>, <e83db, 0.034302, Priority.HIGH>, <fadbd, 0.034302, Priority.HIGH>, <08328, 0.018761, Priority.HIGH>]
+6 -> [<8eb3c, 0.164999, Priority.HIGH>, <c3fb9, 0.164999, Priority.HIGH>, <0bd6c, 0.164999, Priority.HIGH>, <482cf, 0.120716, Priority.LOW>, <51d56, 0.120716, Priority.LOW>, <2a764, 0.120716, Priority.LOW>, <23913, 0.034302, Priority.HIGH>, <c67ba, 0.14211, Priority.HIGH>, <3a814, 0.14211, Priority.HIGH>, <f76a6, 0.14211, Priority.HIGH>, <35dbf, 0.111256, Priority.LOW>, <16513, 0.025777, Priority.HIGH>]
+7 -> [<2633a, 0.105024, Priority.HIGH>, <c945f, 0.105024, Priority.HIGH>, <57afb, 0.105024, Priority.HIGH>, <3a384, 0.023847, Priority.LOW>, <99c6a, 0.023847, Priority.LOW>, <6e7c6, 0.023847, Priority.LOW>, <2f61b, 0.170024, Priority.LOW>, <2a4eb, 0.018761, Priority.HIGH>, <222e1, 0.111256, Priority.LOW>, <6b441, 0.025777, Priority.HIGH>, <c85d3, 0.025777, Priority.HIGH>]
+8 -> [<32b83, 0.170024, Priority.LOW>, <b0a8f, 0.170024, Priority.LOW>, <1db2f, 0.971521, Priority.HIGH>, <4a2e9, 0.971521, Priority.HIGH>, <faa1b, 0.971521, Priority.HIGH>, <b3cb1, 0.275892, Priority.LOW>, <99606, 0.275892, Priority.LOW>, <06712, 0.275892, Priority.LOW>, <60fd4, 0.106651, Priority.LOW>, <9cbeb, 0.106651, Priority.LOW>, <05555, 0.106651, Priority.LOW>]
+Final Results after Majority Voting: {1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False, 17: False, 18: False, 19: False, 20: False}
