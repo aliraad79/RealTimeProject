@@ -16,7 +16,7 @@ task_sets = generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio)
 tasks_with_tmr_applied = tmr_manager.apply_tmr_to_taskset(task_sets)
 
 for tasks in tasks_with_tmr_applied:
-    print(f"For task set : {tasks}")
+    print(f"For task set : {[(task.id, task.priority.name, task.utilization) for task in tasks]}")
     WFD(num_processes, tasks)
     FFD(num_processes, tasks)
     WFD(num_processes, tasks, advance_mode=True)

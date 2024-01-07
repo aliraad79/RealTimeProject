@@ -36,13 +36,6 @@ def generate_random_periods_uniform(
 
 
 def generate_uunifast(nsets: int, u: float, num_tasks: int):
-    """
-    Args:
-        -   nsets  : Number of sets to generate.
-        -   num_tasks  : The number of tasks in a task set.
-        -   u  : Total utilization of the task set.
-    Returns   nsets   of   n   task utilizations.
-    """
     sets = []
     while len(sets) < nsets:
         utilizations = []
@@ -52,8 +45,10 @@ def generate_uunifast(nsets: int, u: float, num_tasks: int):
             utilizations.append(sumU - nextSumU)
             sumU = nextSumU
         utilizations.append(sumU)
+        
+        if all(ut <= 1 for ut in utilizations):
+            sets.append(utilizations)
 
-        sets.append(utilizations)
     return sets
 
 

@@ -6,6 +6,13 @@ class Priority(Enum):
     LOW = 0
     HIGH = 1
 
+class IDGenerator:
+    _id = 0
+
+    @classmethod
+    def getID(cls):
+        cls._id += 1
+        return cls._id
 
 class Task:
     def __init__(
@@ -16,7 +23,7 @@ class Task:
         priority: Priority,
         tmr_group=None,
     ) -> None:
-        self.id = uuid4()
+        self.id = IDGenerator.getID()
         self.priority = priority
         self.deadline = deadline
         self.utilization = utilization
@@ -35,7 +42,7 @@ class Task:
         return (self.tmr_group, self.is_done())
 
     def __str__(self) -> str:
-        return f"{str(self.id)[:5]}"
+        return f"Task<{self.id}, {self.priority.name}>"
 
     def __repr__(self) -> str:
         return self.__str__()
