@@ -6,6 +6,7 @@ class Priority(Enum):
     LOW = 0
     HIGH = 1
 
+
 class IDGenerator:
     _id = 0
 
@@ -13,6 +14,7 @@ class IDGenerator:
     def getID(cls):
         cls._id += 1
         return cls._id
+
 
 class Task:
     def __init__(
@@ -33,13 +35,16 @@ class Task:
         self.result = False
 
     def is_done(self):
-        return self.remaining_executation_time == 0
+        return self.remaining_executation_time <= 0
 
     def is_high_priority(self):
         return self.priority == Priority.HIGH
 
     def get_result(self):
         return (self.tmr_group, self.is_done())
+
+    def run(self, step):
+        self.remaining_executation_time -= step
 
     def __str__(self) -> str:
         return f"Task<{self.id}, {self.priority.name}>"
