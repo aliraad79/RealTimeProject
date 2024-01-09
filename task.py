@@ -48,6 +48,9 @@ class Task:
 
     def run(self, step):
         self.remaining_executation_time -= step
+    
+    def __eq__(self, __value: object) -> bool:
+        return self.id == __value.id
 
     def __str__(self) -> str:
         return f"Task<{self.id}, {self.priority.name}>"

@@ -16,11 +16,13 @@ class Processor:
         self.tasks: list[Task] = []
         self.algorithm: ScheduleAlgorithm = algorithm
         self.assign_algorithm = assign_algorithm
+        self.initial_task_length = 0
 
         self.time_step = 0.1
 
     def add_tasks(self, tasks: list[Task]):
-        self.tasks.extend(tasks)
+        self.tasks = [i for i in tasks] # Copy
+        self.initial_task_length = len(self.tasks)
 
     def run(self):
         self.tasks = self.algorithm.get_task_list(self.tasks)
@@ -29,8 +31,6 @@ class Processor:
 
         completed_tasks_before_deadline = []
         overdue_tasks = []
-
-        print("Task list", self.tasks_dict)
 
         for time in np.arange(
             self.time_step, longest_task + self.time_step, self.time_step
@@ -53,8 +53,10 @@ class Processor:
             self.tasks = [i for i in self.tasks if i not in overdue_tasks]
             self.tasks = self.algorithm.get_task_list(self.tasks)
 
-        print("Completed Task before Deadline", completed_tasks_before_deadline)
-        print("Overdue Tasks", overdue_tasks)
+        print(
+            "Completetion Rate: ",
+            len(completed_tasks_before_deadline) / self.initial_task_length,
+        )
 
 
 class Core:

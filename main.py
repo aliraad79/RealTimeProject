@@ -7,9 +7,9 @@ from tmr import TMRManager
 from processor import Processor
 
 num_processes = 8
-utilization = num_processes * 0.5
+utilization = num_processes * 0.9
 num_tasks = 20  # TODO
-num_sets = 1
+num_sets = 10
 hc_to_lc_ratio = 1 / 0.5
 
 print_phase_one_result = False
