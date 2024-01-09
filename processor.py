@@ -1,14 +1,21 @@
 from task import Task
 from algorithm.schedule_algorithm import ScheduleAlgorithm
+from algorithm.assign_algorithm import AssignAlgorithm
 from math import floor
 import numpy as np
 
 
 class Processor:
-    def __init__(self, num_processor, algorithm: ScheduleAlgorithm) -> None:
+    def __init__(
+        self,
+        num_processor,
+        algorithm: ScheduleAlgorithm,
+        assign_algorithm: AssignAlgorithm,
+    ) -> None:
         self.proccesors = [Core() for i in range(num_processor)]
         self.tasks: list[Task] = []
         self.algorithm: ScheduleAlgorithm = algorithm
+        self.assign_algorithm = assign_algorithm
 
         self.time_step = 0.1
 
@@ -17,25 +24,37 @@ class Processor:
 
     def run(self):
         self.tasks = self.algorithm.get_task_list(self.tasks)
+        self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
         longest_task = floor(max([i.deadline for i in self.tasks]) + 1)
 
-        for step in np.arange(
+        completed_tasks_before_deadline = []
+        overdue_tasks = []
+
+        print("Task list", self.tasks_dict)
+
+        for time in np.arange(
             self.time_step, longest_task + self.time_step, self.time_step
         ):
             done_tasks = []
-            for task in self.tasks:
-                self.main_loop(task)
-                if task.is_done():
-                    done_tasks.append(task)
+
+            self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
+
+            for processor_id, tasks in self.tasks_dict.items():
+                for task in tasks:
+                    task.run(self.time_step)
+                    if task.is_done():
+                        done_tasks.append(task)
+                        completed_tasks_before_deadline.append(task)
+                    elif task.is_overdue(time):
+                        overdue_tasks.append(task)
+
+            # print("T",overdue_tasks)
             self.tasks = [i for i in self.tasks if i not in done_tasks]
+            self.tasks = [i for i in self.tasks if i not in overdue_tasks]
             self.tasks = self.algorithm.get_task_list(self.tasks)
 
-            if len(done_tasks) != 0:
-                print("Done Tasks: ", done_tasks)
-                print("Tasks: ", self.tasks)
-
-    def main_loop(self, task: Task):
-        task.run(self.time_step)
+        print("Completed Task before Deadline", completed_tasks_before_deadline)
+        print("Overdue Tasks", overdue_tasks)
 
 
 class Core:

@@ -24,9 +24,9 @@ if print_phase_one_result:
             f"For task set : {[(task.id, task.priority.name, task.utilization) for task in tasks]}"
         )
         WFD(num_processes, tasks)
-        FFD(num_processes, tasks)
+        FFD(num_processes, False).get_task_map(tasks)
         WFD(num_processes, tasks, advance_mode=True)
-        FFD(num_processes, tasks, advance_mode=True)
+        FFD(num_processes, True).get_task_map(tasks)
 
 task_results = []
 for task_set in tasks_with_tmr_applied:  # Iterate over each set of TMR tasks
@@ -38,6 +38,6 @@ if print_phase_one_result:
 
 
 for tasks in tasks_with_tmr_applied:
-    processor = Processor(num_processes, EDF())
+    processor = Processor(num_processes, EDF(), FFD(num_processes, False))
     processor.add_tasks(tasks)
     processor.run()

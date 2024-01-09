@@ -3,5 +3,5 @@ from task import *
 
 
 class ScheduleAlgorithm(ABC):
-    def get_task_list(self, task_list:list) -> list:
+    def get_task_list(self, task_list:list[Task]) -> list[Task]:
         ...

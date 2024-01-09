@@ -37,6 +37,9 @@ class Task:
     def is_done(self):
         return self.remaining_executation_time <= 0
 
+    def is_overdue(self, current_time):
+        return self.deadline < self.remaining_executation_time + current_time
+
     def is_high_priority(self):
         return self.priority == Priority.HIGH
 
