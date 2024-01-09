@@ -4,8 +4,9 @@ from algorithm.assign_algorithm import AssignAlgorithm
 
 
 class FFD(AssignAlgorithm):
-    def __init__(self, num_processor, advance_mode) -> None:
-        super().__init__(num_processor)
+    def __init__(self, num_processor, print_mode, advance_mode) -> None:
+        super().__init__(num_processor, print_mode)
+
         self.advance_mode = advance_mode
 
     def get_task_map(self, task_list: list[Task]) -> dict[int, Task]:
@@ -45,5 +46,5 @@ class FFD(AssignAlgorithm):
             print("processor -> task utilizations")
             for process_idx, choiced_task_list in allocation.items():
                 print(f"{process_idx} -> {[i for i in choiced_task_list]}")
-        
+
         return allocation
