@@ -14,15 +14,18 @@ class Processor:
     ) -> None:
         self.proccesors = [Core() for i in range(num_processor)]
         self.tasks: list[Task] = []
+        self.initial_task_length = 0
         self.algorithm: ScheduleAlgorithm = algorithm
         self.assign_algorithm = assign_algorithm
-        self.initial_task_length = 0
 
         self.time_step = 0.1
 
     def add_tasks(self, tasks: list[Task]):
-        self.tasks = [i for i in tasks] # Copy
+        self.tasks = [i for i in tasks]  # Copy
         self.initial_task_length = len(self.tasks)
+        self.initial_low_priory_task_length = len(
+            [i for i in self.tasks if not i.is_high_priority()]
+        )
 
     def run(self):
         self.tasks = self.algorithm.get_task_list(self.tasks)
@@ -53,10 +56,17 @@ class Processor:
             self.tasks = [i for i in self.tasks if i not in overdue_tasks]
             self.tasks = self.algorithm.get_task_list(self.tasks)
 
-        print(
-            "Completetion Rate: ",
-            len(completed_tasks_before_deadline) / self.initial_task_length,
+        completation_rate = (
+            len(completed_tasks_before_deadline) / self.initial_task_length
         )
+        Qos = (
+            len(
+                [i for i in completed_tasks_before_deadline if not i.is_high_priority()]
+            )
+            / self.initial_low_priory_task_length
+        )
+
+        return (completation_rate, Qos)
 
 
 class Core:
