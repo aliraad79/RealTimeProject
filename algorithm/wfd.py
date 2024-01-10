@@ -13,11 +13,11 @@ class WFD(AssignAlgorithm):
             task_list, key=lambda x: x.utilization, reverse=True
         )
 
-        assigned_processes = {i: 1 for i in range(self.num_processor + 1)}
+        assigned_processes = {i: 1 for i in range(self.num_processor)}
         allocation = defaultdict(list)
         for task_idx, task in enumerate(sorted_tasks):
             worst_inx = -1
-            for j in range(self.number_of_processor + 1):
+            for j in range(self.num_processor):
                 if not self.advance_mode:
                     if assigned_processes[j] > task.utilization:
                         if worst_inx == -1:
@@ -38,7 +38,7 @@ class WFD(AssignAlgorithm):
                             worst_inx = j
 
             if worst_inx != -1:
-                allocation[worst_inx].append(task_idx)
+                allocation[worst_inx].append(sorted_tasks[task_idx])
                 assigned_processes[worst_inx] -= task.utilization
 
         if self.print_mode:
@@ -48,4 +48,6 @@ class WFD(AssignAlgorithm):
                 print("Allocation with WFD:")
             print("processor -> task utilizations")
             for process_idx, choiced_task_list in allocation.items():
-                print(f"{process_idx} -> {[task_list[i] for i in choiced_task_list]}")
+                print(f"{process_idx} -> {[i for i in choiced_task_list]}")
+        
+        return allocation

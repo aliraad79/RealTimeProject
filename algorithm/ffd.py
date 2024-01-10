@@ -14,11 +14,11 @@ class FFD(AssignAlgorithm):
             task_list, key=lambda x: x.utilization, reverse=True
         )
 
-        assigned_processes = {i: 1 for i in range(self.num_processor + 1)}
+        assigned_processes = {i: 1 for i in range(self.num_processor)}
         allocation = defaultdict(list)
         for task_idx, task in enumerate(sorted_tasks):
             worst_inx = -1
-            for j in range(self.num_processor + 1):
+            for j in range(self.num_processor):
                 if not self.advance_mode:
                     if assigned_processes[j] > task.utilization:
                         worst_inx = j

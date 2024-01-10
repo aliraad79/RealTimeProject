@@ -39,7 +39,7 @@ if print_phase_one_result:
 
 for tasks in tasks_with_tmr_applied:
     processor = Processor(
-        num_processes, EDF(), FFD(num_processes, print_mode=False, advance_mode=False)
+        num_processes, EDF(), WFD(num_processes, print_mode=False, advance_mode=False)
     )
     processor.add_tasks(tasks)
     processor.run()
