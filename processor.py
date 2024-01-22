@@ -8,11 +8,9 @@ import numpy as np
 class Processor:
     def __init__(
         self,
-        num_processor,
         algorithm: ScheduleAlgorithm,
         assign_algorithm: AssignAlgorithm,
     ) -> None:
-        self.proccesors = [Core() for i in range(num_processor)]
         self.tasks: list[Task] = []
         self.initial_task_length = 0
         self.algorithm: ScheduleAlgorithm = algorithm
@@ -42,7 +40,7 @@ class Processor:
 
             self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
 
-            for processor_id, tasks in self.tasks_dict.items():
+            for _, tasks in self.tasks_dict.items():
                 for task in tasks:
                     task.run(self.time_step)
                     if task.is_done():
@@ -51,11 +49,12 @@ class Processor:
                     elif task.is_overdue(time):
                         overdue_tasks.append(task)
 
-            # print("T",overdue_tasks)
-            self.tasks = [i for i in self.tasks if i not in done_tasks]
-            self.tasks = [i for i in self.tasks if i not in overdue_tasks]
+            self.tasks = [
+                i for i in self.tasks if not ((i in done_tasks) or (i in overdue_tasks))
+            ]
             self.tasks = self.algorithm.get_task_list(self.tasks)
 
+        # Reporting parameters
         completation_rate = (
             len(completed_tasks_before_deadline) / self.initial_task_length
         )
@@ -67,8 +66,3 @@ class Processor:
         )
 
         return (completation_rate, Qos)
-
-
-class Core:
-    def __init__(self) -> None:
-        pass
