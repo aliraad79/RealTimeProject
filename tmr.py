@@ -13,7 +13,8 @@ class TMRManager:
             for task in task_set:
                 if task.priority == Priority.HIGH:
                     # Create three copies of each task with the same tmr_group identifier
-                    for _ in range(3):
+                    tmr_task_set.append(task)
+                    for _ in range(2):
                         tmr_task = Task(task.executation_time, task.deadline, task.utilization, task.priority, tmr_group=self.tmr_group_id)
                         tmr_task_set.append(tmr_task)
                     self.tmr_group_id += 1  # Increment the identifier for the next group
