@@ -9,9 +9,9 @@ from tmr import TMRManager
 from processor import Processor
 
 num_processes = 8
-utilization = num_processes * 0.75
-num_tasks = 20
-num_sets = 10
+utilization = num_processes * 0.5
+num_tasks = 10
+num_sets = 20
 hc_to_lc_ratio = 1 / 0.5
 
 
@@ -29,9 +29,8 @@ final_results = tmr_manager.perform_majority_voting(task_results)
 results = []
 for tasks in tasks_with_tmr_applied:
     processor = Processor(
-        EDF(), WFD(num_processes, print_mode=False, advance_mode=False)
+        EDF(), WFD(num_processes, print_mode=False, advance_mode=False), tasks
     )
-    processor.add_tasks(tasks)
     result = processor.run()
     results.append(result)
 
