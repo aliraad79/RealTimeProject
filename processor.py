@@ -12,15 +12,13 @@ class Processor:
         assign_algorithm: AssignAlgorithm,
         tasks: list[Task],
     ) -> None:
-        self.tasks: list[Task] = []
-        self.initial_task_length = 0
         self.algorithm: ScheduleAlgorithm = algorithm
         self.assign_algorithm = assign_algorithm
 
         self.time = 0
         self.time_step = 0.1
 
-        self.tasks = [i for i in tasks]  # Copy
+        self.tasks = tasks
         self.initial_task_length = len(self.tasks)
         self.initial_low_priory_task_length = len(
             [i for i in self.tasks if not i.is_high_priority()]
@@ -30,23 +28,26 @@ class Processor:
         done_tasks = []
         overdue_tasks = []
 
-        while len(self.tasks) != 0:
+        self.tasks = self.algorithm.get_task_list(self.tasks)
+        self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
+
+        while sum(len(i) for i in self.tasks_dict.values()) != 0:
             self.time += self.time_step
 
-            self.tasks = self.algorithm.get_task_list(self.tasks)
-            self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
-
-            for _, tasks in self.tasks_dict.items():
+            shall_removed = []
+            
+            for proc_id, tasks in self.tasks_dict.items():
                 for task in tasks:
                     task.run(self.time_step)
                     if task.is_done():
                         done_tasks.append(task)
+                        shall_removed.append((proc_id, task))
                     elif task.is_overdue(self.time):
                         overdue_tasks.append(task)
-
-            self.tasks = [
-                i for i in self.tasks if not ((i in done_tasks) or (i in overdue_tasks))
-            ]
+                        shall_removed.append((proc_id, task))
+            
+            for i in shall_removed:
+                self.remove_from_task_dict(i[0], i[1])
 
         # Reporting parameters
         completation_rate = len(done_tasks) / self.initial_task_length
@@ -56,3 +57,6 @@ class Processor:
         )
 
         return (completation_rate, Qos)
+    
+    def remove_from_task_dict(self, processor_id, task):
+        self.tasks_dict[processor_id].remove(task)
