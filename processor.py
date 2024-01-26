@@ -17,6 +17,7 @@ class Processor:
         self.algorithm: ScheduleAlgorithm = algorithm
         self.assign_algorithm = assign_algorithm
 
+        self.time = 0
         self.time_step = 0.1
 
         self.tasks = [i for i in tasks]  # Copy
@@ -26,16 +27,13 @@ class Processor:
         )
 
     def run(self):
-        self.tasks = self.algorithm.get_task_list(self.tasks)
-        self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
-        longest_task = floor(max([i.deadline for i in self.tasks]) + 1)
-
         done_tasks = []
         overdue_tasks = []
 
-        for time in np.arange(
-            self.time_step, longest_task + self.time_step, self.time_step
-        ):
+        while len(self.tasks) != 0:
+            self.time += self.time_step
+
+            self.tasks = self.algorithm.get_task_list(self.tasks)
             self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
 
             for _, tasks in self.tasks_dict.items():
@@ -43,13 +41,12 @@ class Processor:
                     task.run(self.time_step)
                     if task.is_done():
                         done_tasks.append(task)
-                    elif task.is_overdue(time):
+                    elif task.is_overdue(self.time):
                         overdue_tasks.append(task)
 
             self.tasks = [
                 i for i in self.tasks if not ((i in done_tasks) or (i in overdue_tasks))
             ]
-            self.tasks = self.algorithm.get_task_list(self.tasks)
 
         # Reporting parameters
         completation_rate = len(done_tasks) / self.initial_task_length
