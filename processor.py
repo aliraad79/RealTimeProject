@@ -30,6 +30,7 @@ class Processor:
 
         self.tasks = self.algorithm.get_task_list(self.tasks)
         self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
+        task_distributation = self.assign_algorithm.get_task_map(self.tasks)
 
         while sum(len(i) for i in self.tasks_dict.values()) != 0:
             self.time += self.time_step
@@ -56,7 +57,7 @@ class Processor:
             / self.initial_low_priory_task_length
         )
 
-        return (completation_rate, Qos)
+        return (completation_rate, Qos, task_distributation.items())
     
     def remove_from_task_dict(self, processor_id, task):
         self.tasks_dict[processor_id].remove(task)

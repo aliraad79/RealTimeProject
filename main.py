@@ -35,7 +35,8 @@ for tasks in tasks_with_tmr_applied:
     results.append(result)
 
 
-df = pd.DataFrame(data=results, columns=["Completation_rate", "Qos"])
+df = pd.DataFrame(data=results, columns=["Completation_rate", "Qos", "task_distributation"])
+df['task_distributation'].to_csv("./schedule.csv")
 
 fig, ax = plt.subplots(ncols=2)
 
@@ -49,3 +50,5 @@ ax[1].axhline(df["Qos"].mean())
 ax[1].set_title("Quality of service")
 
 plt.show()
+
+df['task_distributation'].to_csv("./schedule.csv")
