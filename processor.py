@@ -23,6 +23,8 @@ class Processor:
         self.initial_low_priory_task_length = len(
             [i for i in self.tasks if not i.is_high_priority()]
         )
+        self.host = -1
+        self.is_overrun = False
 
     def run(self):
         done_tasks = []
