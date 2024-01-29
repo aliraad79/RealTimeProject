@@ -8,5 +8,5 @@ class AssignAlgorithm(ABC):
         self.num_processor = num_processor
         self.print_mode = print_mode
 
-    def get_task_map(self, task_list: list[Task]) -> dict[int, Task]:
+    def get_task_map(self, task_list):
         ...

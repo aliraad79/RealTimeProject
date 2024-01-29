@@ -82,7 +82,10 @@ def generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio):
         task_list = []
         for idx, task in enumerate(set):
             priority = Priority.HIGH if idx % hc_to_lc_ratio == 0 else Priority.LOW
-            task_list.append(Task(task[0], task[1], task[2], priority))
+            if priority == Priority.HIGH:
+                task_list.append(Task(task[0], task[1], task[2], priority))
+            else:
+                task_list.append(Task(task[0], task[1], task[2], priority))
         final_task_set.append(task_list)
 
     return final_task_set

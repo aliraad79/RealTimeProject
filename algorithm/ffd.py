@@ -9,7 +9,7 @@ class FFD(AssignAlgorithm):
 
         self.advance_mode = advance_mode
 
-    def get_task_map(self, task_list: list[Task]) -> dict[int, Task]:
+    def get_task_map(self, task_list):
         sorted_tasks: list[Task] = sorted(
             task_list, key=lambda x: x.utilization, reverse=True
         )

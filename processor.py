@@ -10,7 +10,7 @@ class Processor:
         self,
         algorithm: ScheduleAlgorithm,
         assign_algorithm: AssignAlgorithm,
-        tasks: list[Task],
+        tasks,
         is_overrun=False
     ) -> None:
         self.algorithm: ScheduleAlgorithm = algorithm

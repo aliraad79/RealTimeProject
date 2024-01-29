@@ -25,7 +25,6 @@ for task_set in tasks_with_tmr_applied:  # Iterate over each set of TMR tasks
         task_results.append(task.get_result())
 final_results = tmr_manager.perform_majority_voting(task_results)
 
-
 results = []
 for tasks in tasks_with_tmr_applied:
     processor = Processor(

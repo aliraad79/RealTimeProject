@@ -23,6 +23,7 @@ class Task:
         deadline,
         utilization,
         priority: Priority,
+        h_executation_time=None,
         tmr_group=None,
     ) -> None:
         self.id = IDGenerator.getID()
@@ -30,6 +31,7 @@ class Task:
         self.deadline = deadline
         self.utilization = utilization
         self.executation_time = executation_time
+        self.h_executation_time = h_executation_time
         self.remaining_executation_time = executation_time
         self.tmr_group = tmr_group
         self.result = False

@@ -6,7 +6,7 @@ class TMRManager:
     def __init__(self):
         self.tmr_group_id = 1
 
-    def apply_tmr_to_taskset(self, task_sets:list[list[Task]]) -> list[list[Task]]:
+    def apply_tmr_to_taskset(self, task_sets):
         tmr_task_sets = []
         for task_set in task_sets:  # Expecting task_sets to be a list of lists
             tmr_task_set = []
