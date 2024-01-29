@@ -11,6 +11,7 @@ class Processor:
         algorithm: ScheduleAlgorithm,
         assign_algorithm: AssignAlgorithm,
         tasks: list[Task],
+        is_overrun=False
     ) -> None:
         self.algorithm: ScheduleAlgorithm = algorithm
         self.assign_algorithm = assign_algorithm
@@ -24,7 +25,7 @@ class Processor:
             [i for i in self.tasks if not i.is_high_priority()]
         )
         self.host = -1
-        self.is_overrun = False
+        self.is_overrun=is_overrun
 
     def run(self):
         done_tasks = []
