@@ -6,6 +6,10 @@ class Priority(Enum):
     LOW = 0
     HIGH = 1
 
+class Mode(Enum):
+    NORMAL = 0
+    OVERRUN = 1
+
 
 class IDGenerator:
     _id = 0
@@ -35,6 +39,7 @@ class Task:
         self.remaining_executation_time = executation_time
         self.tmr_group = tmr_group
         self.result = False
+        self.mode = Mode.NORMAL
 
     def is_done(self):
         return self.remaining_executation_time <= 0
@@ -48,9 +53,13 @@ class Task:
     def get_result(self):
         return (self.tmr_group, self.is_done())
 
-    def run(self, step):
+    def run(self, step, is_overrun):
+        if is_overrun and self.is_high_priority() and self.mode != Mode.NORMAL:
+            self.mode = Mode.OVERRUN
+            self.remaining_executation_time += (self.h_executation_time - self.executation_time)
+        
         self.remaining_executation_time -= step
-    
+
     def __eq__(self, __value: object) -> bool:
         return self.id == __value.id
 

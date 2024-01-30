@@ -11,12 +11,13 @@ from processor import Processor
 num_processes = 8
 utilization = num_processes * 0.5
 num_tasks = 10
-num_sets = 20
+num_sets = 200
 hc_to_lc_ratio = 1 / 0.5
+wcet_high_coeficcient = 1.2
 
 
 tmr_manager = TMRManager()
-task_sets = generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio)
+task_sets = generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio, wcet_high_coeficcient)
 tasks_with_tmr_applied = tmr_manager.apply_tmr_to_taskset(task_sets)
 
 task_results = []
@@ -28,14 +29,15 @@ final_results = tmr_manager.perform_majority_voting(task_results)
 results = []
 for tasks in tasks_with_tmr_applied:
     processor = Processor(
-        EDF(), WFD(num_processes, print_mode=False, advance_mode=False), tasks
+        EDF(), WFD(num_processes, print_mode=False, advance_mode=False), tasks, is_overrun=True
     )
     result = processor.run()
     results.append(result)
 
 
-df = pd.DataFrame(data=results, columns=["Completation_rate", "Qos", "task_distributation"])
+df = pd.DataFrame(data=results, columns=["Completation_rate", "Qos", "task_distributation", "Overrun_distribution"])
 df['task_distributation'].to_csv("./schedule.csv")
+df['Overrun_distribution'].to_csv("./overrun_schedule.csv")
 
 fig, ax = plt.subplots(ncols=2)
 

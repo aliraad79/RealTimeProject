@@ -72,7 +72,7 @@ def generate_tasksets(utilizations, periods):
     ]
 
 
-def generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio):
+def generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio, wcet_high_coeficcient):
     periods = generate_random_periods_uniform(num_tasks, num_sets, 5, 10)
     uunifast = generate_uunifast(num_sets, utilization, num_tasks)
     task_sets = generate_tasksets(uunifast, periods)
@@ -83,7 +83,7 @@ def generate_task_set(utilization, num_tasks, num_sets, hc_to_lc_ratio):
         for idx, task in enumerate(set):
             priority = Priority.HIGH if idx % hc_to_lc_ratio == 0 else Priority.LOW
             if priority == Priority.HIGH:
-                task_list.append(Task(task[0], task[1], task[2], priority))
+                task_list.append(Task(task[0], task[1], task[2], priority, task[0] * wcet_high_coeficcient))
             else:
                 task_list.append(Task(task[0], task[1], task[2], priority))
         final_task_set.append(task_list)
