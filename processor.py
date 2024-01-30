@@ -81,6 +81,8 @@ class Processor:
         for task_list in self.tasks_dict.values():
             tasks.extend(task_list)
 
+        # Migrate
         self.tasks = self.algorithm.get_overrun_task_list(tasks)
+        self.assign_algorithm.num_processor = self.assign_algorithm.num_processor // 2
         self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
         self.overrun_distributation = self.assign_algorithm.get_task_map(self.tasks)
