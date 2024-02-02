@@ -29,7 +29,7 @@ final_results = tmr_manager.perform_majority_voting(task_results)
 results = []
 for tasks in tasks_with_tmr_applied:
     processor = Processor(
-        EDF(), WFD(num_processes, print_mode=False, advance_mode=False), tasks, is_overrun=True
+        EDF(), WFD(num_processes, print_mode=False, advance_mode=False), tasks, num_processes, is_overrun=True
     )
     result = processor.run()
     results.append(result)
