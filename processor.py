@@ -1,7 +1,6 @@
 from task import Task
 from algorithm.schedule_algorithm import ScheduleAlgorithm
 from algorithm.assign_algorithm import AssignAlgorithm
-import math
 import numpy as np
 import random
 
@@ -96,15 +95,27 @@ class Processor:
 
             # Migrate
             random_cores = random.sample(range(len(self.cores)), len(self.cores) // 2)
+            soft_tasks = []
             for core_id in random_cores:
-                self.cores[core_id].set_overrun()
+                core_soft_tasks = self.cores[core_id].set_overrun()
+                soft_tasks.extend(core_soft_tasks)
 
-            t_list = [i for i in range(len(self.cores)) if i not in random_cores]
+            host_cores = [
+                i
+                for i in range(len(self.cores))
+                if i not in random_cores and self.cores[i].is_host
+            ]
+            # Best fit
+            for task in soft_tasks:
+                lowest_utilized_core = sorted(
+                    host_cores, key=lambda x: self.cores[x].sum_util()
+                )[0]
 
-            self.tasks = self.algorithm.get_overrun_task_list(tasks)
-            self.tasks_dict = self.assign_algorithm.get_task_map(self.tasks)
+                self.cores[lowest_utilized_core].tasks.append(task)
 
-            self.overrun_distributation = self.assign_algorithm.get_task_map(self.tasks)
+            self.overrun_distributation = {
+                core.core_number: core.tasks for core in self.cores
+            }
 
 
 class Core:
@@ -112,16 +123,22 @@ class Core:
         self.is_overrun = False
         self.time_step = time_step
         self.core_number = core_number
-        self.host = False
+        self.is_host = False
 
     def set_tasks(self, tasks):
         self.tasks = tasks
 
     def set_overrun(self):
         self.is_overrun = True
+        soft_tasks = [task for task in self.tasks if not task.is_high_priority()]
+        self.tasks = [task for task in self.tasks if task.is_high_priority()]
+        return soft_tasks
 
     def make_host(self):
-        self.host = True
+        self.is_host = True
+
+    def sum_util(self):
+        return sum(i.utilization for i in self.tasks)
 
     def run(self, time):
         done_tasks = []
@@ -140,3 +157,6 @@ class Core:
             self.tasks.remove(task)
 
         return done_tasks
+
+    def __repr__(self) -> str:
+        return f"Core<{self.sum_util()}>"
