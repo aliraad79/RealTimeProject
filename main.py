@@ -8,9 +8,9 @@ from uunifast import generate_task_set
 from tmr import TMRManager
 from processor import Processor
 
-num_processes = 8
-utilization = num_processes * 0.5
-num_tasks = 10
+num_processes = 16
+utilization = num_processes * 0.75
+num_tasks = 20
 num_sets = 200
 hc_to_lc_ratio = 1 / 0.5
 wcet_high_coeficcient = 1.2
@@ -27,7 +27,7 @@ for task_set in tasks_with_tmr_applied:  # Iterate over each set of TMR tasks
 final_results = tmr_manager.perform_majority_voting(task_results)
 
 results = []
-for tasks in tasks_with_tmr_applied:
+for row, tasks in enumerate(tasks_with_tmr_applied):
     processor = Processor(
         EDF(), WFD(num_processes, print_mode=False, advance_mode=False), tasks, num_processes, is_overrun=True
     )

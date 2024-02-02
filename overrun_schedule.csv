@@ -1,161 +1,161 @@
 ,Overrun_distribution
-0,dict_items([])
-1,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-2,dict_items([])
-3,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-4,dict_items([])
-5,dict_items([])
+0,"dict_items([(0, []), (1, [Task<15, HIGH>]), (2, [Task<4015, HIGH>]), (3, [Task<4016, HIGH>]), (4, [Task<17, HIGH>]), (5, [Task<4017, HIGH>]), (6, [Task<4018, HIGH>]), (7, [Task<1, HIGH>, Task<14, LOW>]), (8, [Task<4001, HIGH>]), (9, [Task<4002, HIGH>]), (10, [Task<19, HIGH>]), (11, [Task<4019, HIGH>]), (12, [Task<4020, HIGH>, Task<20, LOW>]), (13, [Task<9, HIGH>]), (14, [Task<2, LOW>, Task<4014, HIGH>]), (15, [Task<13, HIGH>, Task<4013, HIGH>])])"
+1,dict_items([])
+2,"dict_items([(0, []), (1, [Task<46, LOW>]), (2, []), (3, [Task<43, HIGH>]), (4, [Task<4043, HIGH>]), (5, [Task<4044, HIGH>]), (6, []), (7, [Task<44, LOW>]), (8, [Task<48, LOW>]), (9, [Task<54, LOW>]), (10, [Task<53, HIGH>]), (11, [Task<4053, HIGH>]), (12, [Task<4054, HIGH>]), (13, []), (14, []), (15, [Task<52, LOW>])])"
+3,dict_items([])
+4,"dict_items([(0, [Task<97, HIGH>]), (1, [Task<4097, HIGH>]), (2, [Task<4098, HIGH>]), (3, []), (4, []), (5, [Task<93, HIGH>]), (6, [Task<4093, HIGH>]), (7, [Task<4094, HIGH>]), (8, [Task<100, LOW>]), (9, [Task<90, LOW>]), (10, []), (11, []), (12, [Task<92, LOW>]), (13, [Task<94, LOW>]), (14, []), (15, [])])"
+5,"dict_items([(0, []), (1, [Task<114, LOW>]), (2, [Task<102, LOW>]), (3, [Task<101, HIGH>, Task<110, LOW>]), (4, [Task<4101, HIGH>]), (5, [Task<4102, HIGH>]), (6, [Task<117, HIGH>, Task<4103, HIGH>]), (7, [Task<4117, HIGH>, Task<4104, HIGH>, Task<116, LOW>]), (8, [Task<4118, HIGH>, Task<115, HIGH>, Task<4115, HIGH>, Task<4116, HIGH>, Task<120, LOW>]), (9, [Task<103, HIGH>]), (10, [Task<4120, HIGH>]), (11, [Task<4119, HIGH>]), (12, [Task<119, HIGH>]), (13, [Task<111, HIGH>, Task<105, HIGH>, Task<113, HIGH>, Task<118, LOW>]), (14, [Task<4111, HIGH>, Task<4105, HIGH>, Task<4113, HIGH>]), (15, [Task<4112, HIGH>, Task<4106, HIGH>, Task<4114, HIGH>, Task<104, LOW>])])"
 6,dict_items([])
 7,dict_items([])
-8,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+8,dict_items([])
 9,dict_items([])
-10,dict_items([])
+10,"dict_items([(0, [Task<219, HIGH>]), (1, [Task<4219, HIGH>]), (2, [Task<4220, HIGH>]), (3, []), (4, []), (5, [Task<214, LOW>]), (6, [Task<216, LOW>]), (7, [Task<211, HIGH>, Task<213, HIGH>]), (8, [Task<4211, HIGH>, Task<4213, HIGH>]), (9, [Task<4212, HIGH>, Task<4214, HIGH>]), (10, [Task<215, HIGH>, Task<205, HIGH>, Task<212, LOW>]), (11, [Task<4215, HIGH>, Task<4205, HIGH>, Task<220, LOW>]), (12, [Task<4216, HIGH>, Task<4206, HIGH>]), (13, []), (14, [Task<204, LOW>, Task<4218, HIGH>, Task<218, LOW>]), (15, [Task<217, HIGH>, Task<4217, HIGH>, Task<208, LOW>])])"
 11,dict_items([])
-12,dict_items([])
+12,"dict_items([(0, []), (1, [Task<258, LOW>]), (2, []), (3, []), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 13,dict_items([])
-14,dict_items([])
+14,"dict_items([(0, [Task<295, HIGH>, Task<294, LOW>]), (1, [Task<4295, HIGH>, Task<298, LOW>]), (2, [Task<4296, HIGH>]), (3, [Task<297, HIGH>, Task<282, LOW>]), (4, [Task<4297, HIGH>]), (5, [Task<4298, HIGH>, Task<290, LOW>]), (6, []), (7, [Task<299, HIGH>, Task<283, HIGH>]), (8, [Task<4299, HIGH>, Task<4283, HIGH>]), (9, [Task<4300, HIGH>, Task<4284, HIGH>]), (10, []), (11, [Task<281, HIGH>, Task<293, HIGH>]), (12, [Task<4281, HIGH>, Task<4293, HIGH>, Task<286, LOW>]), (13, [Task<4282, HIGH>, Task<4294, HIGH>]), (14, [Task<4292, HIGH>]), (15, [Task<291, HIGH>, Task<4291, HIGH>])])"
 15,dict_items([])
-16,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+16,dict_items([])
 17,dict_items([])
 18,dict_items([])
-19,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+19,"dict_items([(0, []), (1, []), (2, []), (3, [Task<396, LOW>]), (4, []), (5, [Task<382, LOW>]), (6, []), (7, []), (8, [Task<390, LOW>]), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 20,dict_items([])
 21,dict_items([])
-22,dict_items([])
+22,"dict_items([(0, []), (1, []), (2, [Task<457, HIGH>]), (3, [Task<4457, HIGH>]), (4, [Task<4458, HIGH>]), (5, [Task<453, HIGH>]), (6, [Task<4453, HIGH>]), (7, [Task<4454, HIGH>]), (8, [Task<445, HIGH>]), (9, [Task<4445, HIGH>]), (10, [Task<4446, HIGH>]), (11, []), (12, []), (13, [Task<444, LOW>]), (14, [Task<456, LOW>]), (15, [])])"
 23,dict_items([])
 24,dict_items([])
 25,dict_items([])
-26,dict_items([])
+26,"dict_items([(0, []), (1, [Task<526, LOW>]), (2, [Task<525, HIGH>]), (3, [Task<4525, HIGH>]), (4, [Task<4526, HIGH>]), (5, [Task<532, LOW>]), (6, [Task<522, LOW>]), (7, [Task<534, LOW>]), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 27,dict_items([])
-28,dict_items([])
-29,dict_items([])
+28,"dict_items([(0, [Task<573, HIGH>]), (1, [Task<4573, HIGH>]), (2, [Task<4574, HIGH>]), (3, [Task<577, HIGH>]), (4, [Task<4577, HIGH>]), (5, [Task<4578, HIGH>]), (6, [Task<575, HIGH>]), (7, [Task<4575, HIGH>]), (8, [Task<4576, HIGH>]), (9, [Task<561, HIGH>]), (10, [Task<4561, HIGH>]), (11, [Task<4562, HIGH>]), (12, [Task<579, HIGH>]), (13, [Task<4579, HIGH>, Task<564, LOW>]), (14, [Task<4580, HIGH>, Task<562, LOW>]), (15, [])])"
+29,"dict_items([(0, []), (1, [Task<600, LOW>]), (2, []), (3, [Task<590, LOW>]), (4, [Task<581, HIGH>, Task<4588, HIGH>]), (5, [Task<4581, HIGH>]), (6, [Task<4582, HIGH>]), (7, [Task<595, HIGH>]), (8, [Task<4595, HIGH>, Task<587, HIGH>]), (9, [Task<4596, HIGH>, Task<4587, HIGH>]), (10, [Task<593, HIGH>]), (11, [Task<4593, HIGH>]), (12, [Task<4594, HIGH>]), (13, [Task<582, LOW>]), (14, [Task<594, LOW>]), (15, [])])"
 30,dict_items([])
-31,dict_items([])
-32,dict_items([])
-33,dict_items([])
-34,dict_items([])
+31,"dict_items([(0, [Task<639, HIGH>]), (1, [Task<4639, HIGH>]), (2, [Task<4640, HIGH>]), (3, []), (4, [Task<628, LOW>]), (5, [Task<621, HIGH>]), (6, [Task<4621, HIGH>]), (7, [Task<4622, HIGH>]), (8, []), (9, [Task<636, LOW>]), (10, [Task<630, LOW>]), (11, []), (12, [Task<626, LOW>]), (13, []), (14, []), (15, [])])"
+32,"dict_items([(0, []), (1, [Task<653, HIGH>]), (2, [Task<4653, HIGH>]), (3, [Task<4654, HIGH>]), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+33,"dict_items([(0, [Task<665, HIGH>]), (1, [Task<4665, HIGH>]), (2, [Task<4666, HIGH>]), (3, []), (4, [Task<675, HIGH>]), (5, [Task<4675, HIGH>]), (6, [Task<4676, HIGH>]), (7, [Task<662, LOW>]), (8, [Task<679, HIGH>]), (9, [Task<4679, HIGH>]), (10, [Task<4680, HIGH>]), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+34,"dict_items([(0, [Task<683, HIGH>]), (1, [Task<4683, HIGH>]), (2, [Task<4684, HIGH>]), (3, [Task<687, HIGH>]), (4, [Task<4687, HIGH>]), (5, [Task<4688, HIGH>]), (6, [Task<695, HIGH>, Task<688, LOW>]), (7, [Task<4695, HIGH>]), (8, [Task<4696, HIGH>]), (9, [Task<696, LOW>, Task<4691, HIGH>]), (10, [Task<691, HIGH>]), (11, [Task<685, HIGH>, Task<4697, HIGH>, Task<700, LOW>]), (12, [Task<4685, HIGH>, Task<4698, HIGH>]), (13, [Task<4686, HIGH>]), (14, [Task<699, HIGH>, Task<4700, HIGH>]), (15, [Task<4699, HIGH>, Task<697, HIGH>, Task<4692, HIGH>])])"
 35,dict_items([])
-36,dict_items([])
+36,"dict_items([(0, []), (1, []), (2, []), (3, [Task<739, HIGH>]), (4, [Task<4739, HIGH>]), (5, [Task<4740, HIGH>]), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 37,dict_items([])
-38,dict_items([])
-39,dict_items([])
+38,"dict_items([(0, []), (1, [Task<771, HIGH>]), (2, [Task<4771, HIGH>]), (3, [Task<4772, HIGH>]), (4, [Task<770, LOW>]), (5, []), (6, [Task<773, HIGH>, Task<4763, HIGH>]), (7, [Task<4773, HIGH>, Task<4764, HIGH>]), (8, [Task<4774, HIGH>]), (9, [Task<761, HIGH>, Task<4775, HIGH>]), (10, [Task<4761, HIGH>, Task<4776, HIGH>]), (11, [Task<4762, HIGH>, Task<763, HIGH>, Task<778, LOW>]), (12, [Task<777, HIGH>, Task<766, LOW>, Task<762, LOW>]), (13, [Task<4777, HIGH>, Task<774, LOW>, Task<772, LOW>]), (14, [Task<4778, HIGH>, Task<775, HIGH>, Task<768, LOW>]), (15, [])])"
+39,"dict_items([(0, [Task<790, LOW>]), (1, [Task<797, HIGH>]), (2, [Task<4797, HIGH>]), (3, [Task<4798, HIGH>]), (4, [Task<794, LOW>]), (5, [Task<786, LOW>]), (6, [Task<787, HIGH>]), (7, [Task<4787, HIGH>]), (8, [Task<4788, HIGH>]), (9, [Task<799, HIGH>]), (10, [Task<4799, HIGH>]), (11, [Task<4800, HIGH>]), (12, [Task<788, LOW>]), (13, [Task<783, HIGH>]), (14, [Task<4783, HIGH>]), (15, [Task<4784, HIGH>])])"
 40,dict_items([])
 41,dict_items([])
-42,dict_items([])
+42,"dict_items([(0, [Task<843, HIGH>]), (1, [Task<4843, HIGH>]), (2, [Task<4844, HIGH>]), (3, []), (4, [Task<858, LOW>]), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 43,dict_items([])
 44,dict_items([])
 45,dict_items([])
-46,dict_items([])
-47,dict_items([])
+46,"dict_items([(0, [Task<932, LOW>]), (1, [Task<923, HIGH>]), (2, [Task<4923, HIGH>]), (3, [Task<4924, HIGH>]), (4, [Task<931, HIGH>, Task<926, LOW>]), (5, [Task<4931, HIGH>]), (6, [Task<4932, HIGH>]), (7, []), (8, [Task<938, LOW>, Task<940, LOW>]), (9, [Task<935, HIGH>, Task<4939, HIGH>]), (10, [Task<4935, HIGH>, Task<4940, HIGH>]), (11, [Task<4936, HIGH>, Task<922, LOW>]), (12, [Task<937, HIGH>, Task<4922, HIGH>]), (13, [Task<4937, HIGH>]), (14, [Task<4938, HIGH>, Task<939, HIGH>]), (15, [Task<921, HIGH>, Task<4921, HIGH>])])"
+47,"dict_items([(0, [Task<960, LOW>]), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 48,dict_items([])
 49,dict_items([])
-50,dict_items([])
+50,"dict_items([(0, [Task<1017, HIGH>, Task<1004, LOW>]), (1, [Task<5017, HIGH>, Task<1016, LOW>]), (2, [Task<5018, HIGH>]), (3, [Task<1019, HIGH>, Task<5015, HIGH>]), (4, [Task<5019, HIGH>, Task<5016, HIGH>]), (5, [Task<5020, HIGH>, Task<1014, LOW>]), (6, [Task<1007, HIGH>, Task<5013, HIGH>]), (7, [Task<5007, HIGH>, Task<5014, HIGH>]), (8, [Task<5008, HIGH>, Task<1015, HIGH>, Task<1002, LOW>]), (9, [Task<1001, HIGH>, Task<5003, HIGH>]), (10, [Task<5001, HIGH>, Task<5004, HIGH>]), (11, [Task<5002, HIGH>, Task<1013, HIGH>]), (12, [Task<1010, LOW>, Task<1003, HIGH>]), (13, [Task<1006, LOW>, Task<1020, LOW>]), (14, []), (15, [])])"
 51,dict_items([])
 52,dict_items([])
-53,dict_items([])
+53,"dict_items([(0, []), (1, [Task<1065, HIGH>]), (2, [Task<5065, HIGH>]), (3, [Task<5066, HIGH>]), (4, []), (5, []), (6, [Task<1063, HIGH>]), (7, [Task<5063, HIGH>]), (8, [Task<5064, HIGH>]), (9, []), (10, [Task<1062, LOW>]), (11, []), (12, [Task<1068, LOW>]), (13, []), (14, [Task<1080, LOW>]), (15, [])])"
 54,dict_items([])
-55,dict_items([])
-56,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-57,dict_items([])
-58,dict_items([])
+55,"dict_items([(0, [Task<1104, LOW>]), (1, [Task<1115, HIGH>]), (2, [Task<5115, HIGH>]), (3, [Task<5116, HIGH>]), (4, []), (5, [Task<1111, HIGH>]), (6, [Task<5111, HIGH>]), (7, [Task<5112, HIGH>]), (8, [Task<1102, LOW>]), (9, []), (10, [Task<1105, HIGH>, Task<1106, LOW>]), (11, [Task<5105, HIGH>, Task<1108, LOW>]), (12, [Task<5106, HIGH>]), (13, []), (14, [Task<1113, HIGH>, Task<5114, HIGH>]), (15, [Task<5113, HIGH>, Task<1112, LOW>])])"
+56,"dict_items([(0, [Task<1135, HIGH>]), (1, [Task<5135, HIGH>]), (2, [Task<5136, HIGH>]), (3, [Task<1123, HIGH>]), (4, [Task<5123, HIGH>]), (5, [Task<5124, HIGH>]), (6, []), (7, [Task<1126, LOW>]), (8, []), (9, [Task<1140, LOW>]), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+57,"dict_items([(0, []), (1, []), (2, []), (3, [Task<1145, HIGH>]), (4, [Task<5145, HIGH>]), (5, [Task<5146, HIGH>]), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+58,"dict_items([(0, [Task<1174, LOW>]), (1, [Task<1175, HIGH>]), (2, [Task<5175, HIGH>]), (3, [Task<5176, HIGH>]), (4, [Task<1166, LOW>]), (5, [Task<1164, LOW>]), (6, [Task<1163, HIGH>]), (7, [Task<5163, HIGH>]), (8, [Task<5164, HIGH>]), (9, [Task<1165, HIGH>, Task<1162, LOW>, Task<1176, LOW>, Task<1172, LOW>, Task<1178, LOW>]), (10, [Task<5165, HIGH>]), (11, [Task<5166, HIGH>]), (12, [Task<1173, HIGH>, Task<5180, HIGH>, Task<1168, LOW>, Task<1180, LOW>]), (13, [Task<5173, HIGH>]), (14, [Task<5174, HIGH>]), (15, [Task<1179, HIGH>, Task<5179, HIGH>])])"
 59,dict_items([])
 60,dict_items([])
 61,dict_items([])
-62,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-63,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-64,dict_items([])
-65,dict_items([])
+62,"dict_items([(0, [Task<1255, HIGH>]), (1, [Task<5255, HIGH>]), (2, [Task<5256, HIGH>]), (3, []), (4, [Task<1259, HIGH>]), (5, [Task<5259, HIGH>]), (6, [Task<5260, HIGH>]), (7, [Task<1260, LOW>]), (8, []), (9, [Task<1258, LOW>]), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+63,dict_items([])
+64,"dict_items([(0, [Task<1292, LOW>]), (1, [Task<1284, LOW>]), (2, []), (3, [Task<1289, HIGH>]), (4, [Task<5289, HIGH>]), (5, [Task<5290, HIGH>]), (6, [Task<1300, LOW>]), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+65,"dict_items([(0, [Task<1311, HIGH>]), (1, [Task<5311, HIGH>]), (2, [Task<5312, HIGH>]), (3, [Task<1306, LOW>]), (4, [Task<1308, LOW>]), (5, []), (6, [Task<1313, HIGH>]), (7, [Task<5313, HIGH>, Task<1320, LOW>]), (8, [Task<5314, HIGH>, Task<1307, HIGH>, Task<5308, HIGH>, Task<1316, LOW>]), (9, [Task<1315, HIGH>]), (10, [Task<5315, HIGH>, Task<1312, LOW>]), (11, [Task<5316, HIGH>, Task<5307, HIGH>]), (12, [Task<1317, HIGH>, Task<1301, HIGH>]), (13, [Task<5317, HIGH>, Task<5301, HIGH>]), (14, [Task<5318, HIGH>, Task<5302, HIGH>]), (15, [Task<1304, LOW>, Task<1314, LOW>])])"
 66,dict_items([])
-67,dict_items([])
+67,"dict_items([(0, [Task<1357, HIGH>]), (1, [Task<5357, HIGH>]), (2, [Task<5358, HIGH>]), (3, [Task<1342, LOW>]), (4, []), (5, [Task<1346, LOW>]), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 68,dict_items([])
-69,dict_items([])
+69,"dict_items([(0, [Task<1391, HIGH>]), (1, [Task<5391, HIGH>]), (2, [Task<5392, HIGH>]), (3, [Task<1396, LOW>]), (4, [Task<1388, LOW>]), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, [Task<1394, LOW>]), (12, []), (13, []), (14, []), (15, [])])"
 70,dict_items([])
 71,dict_items([])
 72,dict_items([])
-73,dict_items([])
-74,dict_items([])
-75,dict_items([])
+73,"dict_items([(0, [Task<1461, HIGH>]), (1, [Task<5461, HIGH>]), (2, [Task<5462, HIGH>]), (3, []), (4, [Task<1464, LOW>]), (5, [Task<1469, HIGH>]), (6, [Task<5469, HIGH>]), (7, [Task<5470, HIGH>]), (8, [Task<1472, LOW>]), (9, []), (10, [Task<1479, HIGH>]), (11, [Task<5479, HIGH>]), (12, [Task<5480, HIGH>]), (13, []), (14, []), (15, [])])"
+74,"dict_items([(0, [Task<1497, HIGH>]), (1, [Task<5497, HIGH>]), (2, [Task<5498, HIGH>]), (3, []), (4, [Task<1485, HIGH>, Task<1494, LOW>]), (5, [Task<5485, HIGH>, Task<1500, LOW>]), (6, [Task<5486, HIGH>, Task<1484, LOW>]), (7, [Task<1499, HIGH>, Task<5482, HIGH>, Task<1490, LOW>]), (8, [Task<5499, HIGH>, Task<1493, HIGH>]), (9, [Task<5500, HIGH>, Task<5493, HIGH>, Task<1496, LOW>]), (10, [Task<1487, HIGH>, Task<5495, HIGH>, Task<5492, HIGH>]), (11, [Task<5487, HIGH>, Task<5496, HIGH>]), (12, [Task<5488, HIGH>, Task<1481, HIGH>, Task<5494, HIGH>]), (13, [Task<1488, LOW>, Task<1495, HIGH>, Task<1491, HIGH>]), (14, [Task<5490, HIGH>, Task<5491, HIGH>]), (15, [Task<1489, HIGH>, Task<5489, HIGH>, Task<5481, HIGH>])])"
+75,"dict_items([(0, []), (1, []), (2, [Task<1519, HIGH>]), (3, [Task<5519, HIGH>]), (4, [Task<5520, HIGH>]), (5, []), (6, [Task<1510, LOW>]), (7, [Task<1514, LOW>]), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 76,dict_items([])
-77,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-78,dict_items([])
-79,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-80,dict_items([])
-81,dict_items([])
-82,dict_items([])
-83,dict_items([])
-84,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+77,dict_items([])
+78,"dict_items([(0, []), (1, [Task<1579, HIGH>, Task<1568, LOW>]), (2, [Task<5579, HIGH>]), (3, [Task<5580, HIGH>]), (4, []), (5, [Task<1578, LOW>, Task<1574, LOW>]), (6, []), (7, [Task<5568, HIGH>]), (8, [Task<1571, HIGH>, Task<5574, HIGH>, Task<1572, LOW>]), (9, [Task<5571, HIGH>, Task<1567, HIGH>, Task<1566, LOW>]), (10, [Task<5572, HIGH>, Task<5567, HIGH>]), (11, [Task<1577, HIGH>]), (12, [Task<5577, HIGH>, Task<1573, HIGH>, Task<1570, LOW>]), (13, [Task<5578, HIGH>, Task<5573, HIGH>]), (14, [Task<5570, HIGH>]), (15, [Task<1569, HIGH>, Task<5569, HIGH>, Task<1576, LOW>])])"
+79,dict_items([])
+80,"dict_items([(0, []), (1, []), (2, []), (3, [Task<1615, HIGH>]), (4, [Task<5615, HIGH>]), (5, [Task<5616, HIGH>]), (6, [Task<1609, HIGH>]), (7, [Task<5609, HIGH>]), (8, [Task<5610, HIGH>]), (9, [Task<1606, LOW>]), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+81,"dict_items([(0, [Task<1636, LOW>]), (1, [Task<1623, HIGH>]), (2, [Task<5623, HIGH>]), (3, [Task<5624, HIGH>]), (4, [Task<1629, HIGH>]), (5, [Task<5629, HIGH>]), (6, [Task<5630, HIGH>]), (7, []), (8, [Task<1627, HIGH>, Task<1634, LOW>]), (9, [Task<5627, HIGH>, Task<1640, LOW>]), (10, [Task<5628, HIGH>]), (11, []), (12, []), (13, []), (14, [Task<1622, LOW>, Task<1628, LOW>]), (15, [])])"
+82,"dict_items([(0, [Task<1644, LOW>]), (1, []), (2, [Task<1654, LOW>]), (3, []), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+83,"dict_items([(0, [Task<1668, LOW>]), (1, []), (2, [Task<1661, HIGH>]), (3, [Task<5661, HIGH>]), (4, [Task<5662, HIGH>]), (5, [Task<1675, HIGH>]), (6, [Task<5675, HIGH>]), (7, [Task<5676, HIGH>]), (8, [Task<1676, LOW>, Task<1670, LOW>]), (9, [Task<1678, LOW>, Task<5668, HIGH>]), (10, [Task<1677, HIGH>, Task<5664, HIGH>]), (11, [Task<5677, HIGH>, Task<1667, HIGH>]), (12, [Task<5678, HIGH>, Task<5667, HIGH>]), (13, [Task<1665, HIGH>, Task<1664, LOW>]), (14, [Task<5665, HIGH>, Task<1663, HIGH>]), (15, [Task<5666, HIGH>, Task<5663, HIGH>])])"
+84,"dict_items([(0, []), (1, [Task<1688, LOW>]), (2, [Task<1692, LOW>]), (3, []), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 85,dict_items([])
 86,dict_items([])
 87,dict_items([])
 88,dict_items([])
 89,dict_items([])
 90,dict_items([])
-91,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+91,dict_items([])
 92,dict_items([])
-93,dict_items([])
+93,"dict_items([(0, [Task<1870, LOW>]), (1, []), (2, [Task<1872, LOW>]), (3, [Task<1868, LOW>]), (4, []), (5, []), (6, [Task<1878, LOW>]), (7, []), (8, []), (9, []), (10, [Task<1880, LOW>]), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 94,dict_items([])
-95,dict_items([])
-96,dict_items([])
+95,"dict_items([(0, [Task<1918, LOW>]), (1, [Task<1920, LOW>]), (2, [Task<1917, HIGH>]), (3, [Task<5917, HIGH>]), (4, [Task<5918, HIGH>]), (5, [Task<1905, HIGH>]), (6, [Task<5905, HIGH>]), (7, [Task<5906, HIGH>]), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+96,"dict_items([(0, [Task<1937, HIGH>]), (1, [Task<5937, HIGH>]), (2, [Task<5938, HIGH>]), (3, [Task<1929, HIGH>, Task<5936, HIGH>]), (4, [Task<5929, HIGH>, Task<1928, LOW>]), (5, [Task<5930, HIGH>, Task<1926, LOW>]), (6, [Task<1923, HIGH>]), (7, [Task<5934, HIGH>]), (8, [Task<1936, LOW>, Task<5933, HIGH>, Task<1924, LOW>]), (9, [Task<1932, LOW>, Task<1933, HIGH>, Task<5923, HIGH>]), (10, [Task<5940, HIGH>, Task<5935, HIGH>]), (11, [Task<1925, HIGH>, Task<5927, HIGH>]), (12, [Task<5925, HIGH>, Task<1939, HIGH>, Task<1930, LOW>]), (13, [Task<5926, HIGH>, Task<5939, HIGH>, Task<1927, HIGH>, Task<1922, LOW>]), (14, [Task<1931, HIGH>, Task<5932, HIGH>, Task<1935, HIGH>]), (15, [Task<5931, HIGH>, Task<1940, LOW>, Task<5928, HIGH>])])"
 97,dict_items([])
 98,dict_items([])
-99,dict_items([])
+99,"dict_items([(0, [Task<1995, HIGH>]), (1, [Task<5995, HIGH>]), (2, [Task<5996, HIGH>]), (3, [Task<1991, HIGH>]), (4, [Task<5991, HIGH>]), (5, [Task<5992, HIGH>]), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 100,dict_items([])
-101,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+101,dict_items([])
 102,dict_items([])
 103,dict_items([])
-104,dict_items([])
-105,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+104,"dict_items([(0, [Task<2098, LOW>]), (1, [Task<2099, HIGH>]), (2, [Task<6099, HIGH>]), (3, [Task<6100, HIGH>]), (4, [Task<2089, HIGH>]), (5, [Task<6089, HIGH>]), (6, [Task<6090, HIGH>, Task<2096, LOW>]), (7, [Task<2085, HIGH>, Task<6082, HIGH>]), (8, [Task<6085, HIGH>, Task<2086, LOW>]), (9, [Task<6086, HIGH>, Task<2100, LOW>]), (10, [Task<2093, HIGH>]), (11, [Task<6093, HIGH>, Task<2081, HIGH>]), (12, [Task<6094, HIGH>, Task<6081, HIGH>]), (13, [Task<6095, HIGH>]), (14, [Task<2097, HIGH>, Task<2088, LOW>]), (15, [Task<6097, HIGH>, Task<2095, HIGH>])])"
+105,dict_items([])
 106,dict_items([])
-107,dict_items([])
-108,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+107,"dict_items([(0, [Task<2142, LOW>]), (1, [Task<2149, HIGH>]), (2, [Task<6149, HIGH>]), (3, [Task<6150, HIGH>]), (4, [Task<2147, HIGH>]), (5, [Task<6147, HIGH>]), (6, [Task<6148, HIGH>]), (7, [Task<2156, LOW>]), (8, [Task<2153, HIGH>]), (9, [Task<6153, HIGH>]), (10, [Task<6154, HIGH>, Task<2150, LOW>]), (11, [Task<2158, LOW>, Task<2148, LOW>]), (12, []), (13, [Task<2143, HIGH>, Task<2155, HIGH>]), (14, [Task<6143, HIGH>, Task<6155, HIGH>]), (15, [Task<6144, HIGH>, Task<6156, HIGH>])])"
+108,"dict_items([(0, []), (1, []), (2, []), (3, [Task<2177, HIGH>]), (4, [Task<6177, HIGH>]), (5, [Task<6178, HIGH>]), (6, [Task<2178, LOW>]), (7, []), (8, [Task<2162, LOW>]), (9, []), (10, [Task<2168, LOW>]), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 109,dict_items([])
 110,dict_items([])
-111,dict_items([])
+111,"dict_items([(0, [Task<2235, HIGH>]), (1, [Task<6235, HIGH>]), (2, [Task<6236, HIGH>]), (3, [Task<2237, HIGH>, Task<6232, HIGH>]), (4, [Task<6237, HIGH>]), (5, [Task<6238, HIGH>]), (6, [Task<2221, HIGH>]), (7, [Task<6221, HIGH>, Task<2231, HIGH>]), (8, [Task<6222, HIGH>, Task<6231, HIGH>]), (9, [Task<2227, HIGH>]), (10, [Task<2239, HIGH>, Task<2222, LOW>]), (11, [Task<6239, HIGH>]), (12, [Task<6240, HIGH>, Task<2226, LOW>]), (13, [Task<2228, LOW>, Task<2232, LOW>]), (14, [Task<2225, HIGH>, Task<6226, HIGH>, Task<6228, HIGH>]), (15, [Task<6225, HIGH>, Task<2240, LOW>, Task<6227, HIGH>])])"
 112,dict_items([])
-113,dict_items([])
-114,dict_items([])
+113,"dict_items([(0, []), (1, [Task<2262, LOW>]), (2, []), (3, [Task<2272, LOW>]), (4, [Task<2277, HIGH>]), (5, [Task<6277, HIGH>]), (6, [Task<6278, HIGH>]), (7, []), (8, []), (9, []), (10, [Task<2276, LOW>]), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+114,"dict_items([(0, [Task<2297, HIGH>]), (1, [Task<6297, HIGH>]), (2, [Task<6298, HIGH>]), (3, []), (4, [Task<2298, LOW>]), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 115,dict_items([])
 116,dict_items([])
-117,dict_items([])
+117,"dict_items([(0, [Task<2346, LOW>]), (1, [Task<2353, HIGH>]), (2, [Task<6353, HIGH>]), (3, [Task<6354, HIGH>]), (4, [Task<2352, LOW>]), (5, [Task<2351, HIGH>]), (6, [Task<6351, HIGH>]), (7, [Task<6352, HIGH>]), (8, []), (9, [Task<2359, HIGH>]), (10, [Task<6359, HIGH>]), (11, [Task<6360, HIGH>]), (12, []), (13, []), (14, []), (15, [])])"
 118,dict_items([])
 119,dict_items([])
-120,dict_items([])
-121,dict_items([])
-122,dict_items([])
-123,dict_items([])
+120,"dict_items([(0, [Task<2412, LOW>]), (1, [Task<2417, HIGH>]), (2, [Task<6417, HIGH>]), (3, [Task<6418, HIGH>]), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+121,"dict_items([(0, [Task<2434, LOW>]), (1, [Task<2427, HIGH>]), (2, [Task<6427, HIGH>]), (3, [Task<6428, HIGH>]), (4, [Task<2421, HIGH>, Task<6435, HIGH>]), (5, [Task<6421, HIGH>, Task<6436, HIGH>, Task<2428, LOW>]), (6, [Task<6422, HIGH>, Task<2424, LOW>]), (7, [Task<2425, HIGH>, Task<6430, HIGH>]), (8, [Task<6425, HIGH>]), (9, [Task<6426, HIGH>, Task<2435, HIGH>, Task<6424, HIGH>]), (10, [Task<6429, HIGH>]), (11, [Task<2426, LOW>, Task<2429, HIGH>, Task<2440, LOW>]), (12, []), (13, [Task<2439, HIGH>, Task<2433, HIGH>, Task<2422, LOW>]), (14, [Task<6439, HIGH>, Task<6433, HIGH>, Task<2423, HIGH>]), (15, [Task<6440, HIGH>, Task<6434, HIGH>, Task<6423, HIGH>])])"
+122,"dict_items([(0, [Task<2449, HIGH>]), (1, [Task<6449, HIGH>]), (2, [Task<6450, HIGH>]), (3, []), (4, [Task<2451, HIGH>]), (5, [Task<6451, HIGH>]), (6, [Task<6452, HIGH>]), (7, [Task<2455, HIGH>]), (8, [Task<6455, HIGH>]), (9, [Task<6456, HIGH>]), (10, []), (11, []), (12, []), (13, [Task<2446, LOW>]), (14, []), (15, [])])"
+123,"dict_items([(0, [Task<2475, HIGH>]), (1, [Task<6475, HIGH>]), (2, [Task<6476, HIGH>]), (3, [Task<2471, HIGH>]), (4, [Task<6471, HIGH>]), (5, [Task<6472, HIGH>]), (6, []), (7, []), (8, [Task<2466, LOW>]), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 124,dict_items([])
-125,dict_items([])
-126,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-127,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-128,dict_items([])
-129,dict_items([])
-130,dict_items([])
+125,"dict_items([(0, [Task<2515, HIGH>]), (1, [Task<6515, HIGH>]), (2, [Task<6516, HIGH>]), (3, [Task<2508, LOW>]), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+126,dict_items([])
+127,dict_items([])
+128,"dict_items([(0, [Task<2580, LOW>]), (1, [Task<2573, HIGH>]), (2, [Task<6573, HIGH>]), (3, [Task<6574, HIGH>]), (4, []), (5, [Task<2569, HIGH>, Task<6572, HIGH>]), (6, [Task<6569, HIGH>]), (7, [Task<6570, HIGH>, Task<2568, LOW>]), (8, [Task<2562, LOW>, Task<2576, LOW>, Task<2570, LOW>, Task<2566, LOW>]), (9, [Task<2579, HIGH>, Task<6567, HIGH>, Task<2571, HIGH>]), (10, [Task<6579, HIGH>, Task<6568, HIGH>, Task<6571, HIGH>]), (11, [Task<6580, HIGH>, Task<6578, HIGH>]), (12, [Task<2561, HIGH>, Task<6565, HIGH>, Task<2564, LOW>]), (13, [Task<6561, HIGH>, Task<6566, HIGH>]), (14, [Task<6562, HIGH>, Task<2567, HIGH>, Task<6577, HIGH>]), (15, [Task<2565, HIGH>, Task<2577, HIGH>])])"
+129,"dict_items([(0, [Task<2600, LOW>]), (1, [Task<2598, LOW>]), (2, [Task<2599, HIGH>]), (3, [Task<6599, HIGH>]), (4, [Task<6600, HIGH>]), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+130,"dict_items([(0, [Task<2601, HIGH>]), (1, [Task<6601, HIGH>]), (2, [Task<6602, HIGH>]), (3, [Task<2611, HIGH>]), (4, [Task<6611, HIGH>]), (5, [Task<6612, HIGH>]), (6, [Task<2610, LOW>]), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 131,dict_items([])
 132,dict_items([])
 133,dict_items([])
 134,dict_items([])
 135,dict_items([])
 136,dict_items([])
-137,dict_items([])
-138,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-139,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+137,"dict_items([(0, []), (1, [Task<2751, HIGH>]), (2, [Task<6751, HIGH>]), (3, [Task<6752, HIGH>]), (4, [Task<2743, HIGH>, Task<2754, LOW>]), (5, [Task<6743, HIGH>]), (6, [Task<6744, HIGH>, Task<2750, LOW>]), (7, []), (8, [Task<2755, HIGH>, Task<2756, LOW>]), (9, [Task<6755, HIGH>, Task<2745, HIGH>, Task<6746, HIGH>]), (10, [Task<6756, HIGH>, Task<6745, HIGH>]), (11, [Task<2753, HIGH>, Task<2747, HIGH>]), (12, [Task<6753, HIGH>, Task<6747, HIGH>]), (13, [Task<6754, HIGH>, Task<6748, HIGH>]), (14, [Task<2749, HIGH>, Task<6750, HIGH>]), (15, [Task<6749, HIGH>, Task<2744, LOW>, Task<2746, LOW>])])"
+138,dict_items([])
+139,"dict_items([(0, [Task<2787, HIGH>]), (1, [Task<6787, HIGH>]), (2, [Task<6788, HIGH>]), (3, [Task<2795, HIGH>]), (4, [Task<6795, HIGH>]), (5, [Task<6796, HIGH>]), (6, [Task<2785, HIGH>]), (7, [Task<6785, HIGH>]), (8, [Task<6786, HIGH>]), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 140,dict_items([])
 141,dict_items([])
-142,dict_items([])
+142,"dict_items([(0, []), (1, [Task<2849, HIGH>]), (2, [Task<6849, HIGH>]), (3, [Task<6850, HIGH>]), (4, [Task<2843, HIGH>]), (5, [Task<6843, HIGH>]), (6, [Task<6844, HIGH>]), (7, [Task<2860, LOW>]), (8, []), (9, [Task<2846, LOW>]), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 143,dict_items([])
 144,dict_items([])
-145,dict_items([])
-146,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-147,dict_items([])
+145,"dict_items([(0, [Task<2918, LOW>]), (1, [Task<2914, LOW>]), (2, [Task<2913, HIGH>]), (3, [Task<6913, HIGH>]), (4, [Task<6914, HIGH>]), (5, [Task<2903, HIGH>]), (6, [Task<6903, HIGH>]), (7, [Task<6904, HIGH>]), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+146,dict_items([])
+147,"dict_items([(0, [Task<2959, HIGH>]), (1, [Task<6959, HIGH>]), (2, [Task<6960, HIGH>]), (3, [Task<2951, HIGH>]), (4, [Task<6951, HIGH>]), (5, [Task<6952, HIGH>]), (6, [Task<2942, LOW>]), (7, [Task<2943, HIGH>]), (8, [Task<6943, HIGH>]), (9, [Task<6944, HIGH>]), (10, [Task<2955, HIGH>]), (11, [Task<6955, HIGH>]), (12, [Task<6956, HIGH>]), (13, [Task<2957, HIGH>, Task<2954, LOW>]), (14, [Task<6957, HIGH>]), (15, [Task<6958, HIGH>])])"
 148,dict_items([])
-149,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-150,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+149,dict_items([])
+150,dict_items([])
 151,dict_items([])
 152,dict_items([])
-153,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-154,dict_items([])
-155,dict_items([])
-156,dict_items([])
+153,dict_items([])
+154,"dict_items([(0, [Task<3081, HIGH>]), (1, [Task<7081, HIGH>]), (2, [Task<7082, HIGH>]), (3, []), (4, [Task<3097, HIGH>]), (5, [Task<7097, HIGH>]), (6, [Task<7098, HIGH>]), (7, [Task<3098, LOW>, Task<3084, LOW>]), (8, [Task<3094, LOW>, Task<7100, HIGH>]), (9, [Task<3087, HIGH>, Task<7084, HIGH>]), (10, [Task<7087, HIGH>, Task<3099, HIGH>]), (11, [Task<7088, HIGH>, Task<7099, HIGH>]), (12, [Task<3095, HIGH>, Task<3082, LOW>]), (13, [Task<7095, HIGH>, Task<3083, HIGH>]), (14, [Task<7096, HIGH>, Task<7083, HIGH>]), (15, [Task<3092, LOW>, Task<3096, LOW>])])"
+155,"dict_items([(0, [Task<3111, HIGH>]), (1, [Task<7111, HIGH>]), (2, [Task<7112, HIGH>]), (3, [Task<3116, LOW>]), (4, []), (5, []), (6, [Task<3112, LOW>]), (7, []), (8, [Task<3115, HIGH>]), (9, [Task<7115, HIGH>]), (10, [Task<7116, HIGH>]), (11, []), (12, [Task<3109, HIGH>]), (13, [Task<7109, HIGH>]), (14, [Task<7110, HIGH>]), (15, [Task<3110, LOW>])])"
+156,"dict_items([(0, []), (1, [Task<3131, HIGH>]), (2, [Task<7131, HIGH>]), (3, [Task<7132, HIGH>]), (4, [Task<3121, HIGH>, Task<3126, LOW>]), (5, [Task<7121, HIGH>, Task<3130, LOW>]), (6, [Task<7122, HIGH>]), (7, [Task<3125, HIGH>]), (8, [Task<7125, HIGH>]), (9, [Task<7126, HIGH>, Task<3136, LOW>]), (10, [Task<7129, HIGH>]), (11, [Task<3132, LOW>, Task<3129, HIGH>, Task<3128, LOW>]), (12, [Task<7136, HIGH>]), (13, [Task<3127, HIGH>, Task<3134, LOW>, Task<3122, LOW>]), (14, [Task<7127, HIGH>, Task<3135, HIGH>, Task<7130, HIGH>]), (15, [Task<7128, HIGH>, Task<7135, HIGH>, Task<3138, LOW>])])"
 157,dict_items([])
 158,dict_items([])
 159,dict_items([])
@@ -163,39 +163,39 @@
 161,dict_items([])
 162,dict_items([])
 163,dict_items([])
-164,dict_items([])
+164,"dict_items([(0, [Task<3298, LOW>]), (1, []), (2, [Task<3297, HIGH>]), (3, [Task<7297, HIGH>]), (4, [Task<7298, HIGH>]), (5, [Task<3295, HIGH>]), (6, [Task<7295, HIGH>]), (7, [Task<7296, HIGH>]), (8, []), (9, [Task<3294, LOW>]), (10, [Task<3281, HIGH>, Task<7300, HIGH>]), (11, [Task<7281, HIGH>, Task<3286, LOW>]), (12, [Task<7282, HIGH>, Task<3300, LOW>, Task<3288, LOW>]), (13, [Task<3291, HIGH>]), (14, [Task<7291, HIGH>, Task<3299, HIGH>]), (15, [Task<7292, HIGH>, Task<7299, HIGH>])])"
 165,dict_items([])
 166,dict_items([])
-167,dict_items([])
-168,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+167,"dict_items([(0, [Task<3349, HIGH>]), (1, [Task<7349, HIGH>]), (2, [Task<7350, HIGH>]), (3, [Task<3358, LOW>]), (4, [Task<3341, HIGH>]), (5, [Task<7341, HIGH>, Task<3350, LOW>]), (6, [Task<7342, HIGH>]), (7, [Task<3345, HIGH>]), (8, [Task<7345, HIGH>]), (9, [Task<7346, HIGH>]), (10, [Task<3357, HIGH>, Task<3360, LOW>]), (11, [Task<7357, HIGH>]), (12, [Task<7358, HIGH>]), (13, [Task<3347, HIGH>, Task<3355, HIGH>, Task<3354, LOW>]), (14, [Task<7347, HIGH>, Task<7355, HIGH>]), (15, [Task<7348, HIGH>, Task<7356, HIGH>])])"
+168,dict_items([])
 169,dict_items([])
 170,dict_items([])
-171,dict_items([])
-172,dict_items([])
+171,"dict_items([(0, [Task<3439, HIGH>]), (1, [Task<7439, HIGH>]), (2, [Task<7440, HIGH>]), (3, [Task<3433, HIGH>]), (4, [Task<7433, HIGH>]), (5, [Task<7434, HIGH>]), (6, [Task<3423, HIGH>]), (7, [Task<7423, HIGH>]), (8, [Task<7424, HIGH>]), (9, [Task<3430, LOW>]), (10, [Task<3422, LOW>]), (11, [Task<3440, LOW>]), (12, [Task<3421, HIGH>, Task<7436, HIGH>]), (13, [Task<7421, HIGH>]), (14, [Task<7422, HIGH>]), (15, [Task<3435, HIGH>, Task<7435, HIGH>])])"
+172,"dict_items([(0, [Task<3447, HIGH>]), (1, [Task<7447, HIGH>]), (2, [Task<7448, HIGH>]), (3, [Task<3457, HIGH>]), (4, [Task<7457, HIGH>]), (5, [Task<7458, HIGH>]), (6, [Task<3458, LOW>]), (7, [Task<3453, HIGH>]), (8, [Task<7453, HIGH>]), (9, [Task<7454, HIGH>]), (10, []), (11, []), (12, [Task<3456, LOW>]), (13, [Task<3444, LOW>]), (14, []), (15, [Task<3450, LOW>])])"
 173,dict_items([])
 174,dict_items([])
 175,dict_items([])
-176,dict_items([])
+176,"dict_items([(0, [Task<3530, LOW>]), (1, [Task<3539, HIGH>]), (2, [Task<7539, HIGH>]), (3, [Task<7540, HIGH>]), (4, [Task<3521, HIGH>]), (5, [Task<7521, HIGH>]), (6, [Task<7522, HIGH>]), (7, [Task<3540, LOW>]), (8, []), (9, [Task<3526, LOW>]), (10, []), (11, []), (12, [Task<3528, LOW>]), (13, []), (14, []), (15, [])])"
 177,dict_items([])
-178,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-179,dict_items([])
-180,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-181,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
-182,dict_items([])
+178,dict_items([])
+179,"dict_items([(0, [Task<3588, LOW>]), (1, []), (2, [Task<3593, HIGH>]), (3, [Task<7593, HIGH>]), (4, [Task<7594, HIGH>]), (5, [Task<3592, LOW>]), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+180,dict_items([])
+181,"dict_items([(0, []), (1, []), (2, []), (3, [Task<3624, LOW>]), (4, []), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
+182,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, [Task<3648, LOW>]), (5, []), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 183,dict_items([])
 184,dict_items([])
 185,dict_items([])
-186,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+186,"dict_items([(0, [Task<3737, HIGH>, Task<7731, HIGH>, Task<3722, LOW>]), (1, [Task<7737, HIGH>, Task<7732, HIGH>, Task<3738, LOW>]), (2, [Task<7738, HIGH>]), (3, [Task<3729, HIGH>, Task<7727, HIGH>]), (4, [Task<7729, HIGH>, Task<7728, HIGH>]), (5, [Task<7730, HIGH>, Task<3731, HIGH>]), (6, [Task<3736, LOW>, Task<3727, HIGH>]), (7, [Task<3735, HIGH>, Task<7733, HIGH>]), (8, [Task<7735, HIGH>, Task<7734, HIGH>]), (9, [Task<7736, HIGH>, Task<3740, LOW>]), (10, [Task<3721, HIGH>, Task<7723, HIGH>]), (11, [Task<7721, HIGH>, Task<7724, HIGH>]), (12, [Task<7722, HIGH>, Task<3733, HIGH>]), (13, [Task<3723, HIGH>]), (14, [Task<3732, LOW>, Task<7726, HIGH>, Task<3724, LOW>]), (15, [Task<3725, HIGH>, Task<7725, HIGH>])])"
 187,dict_items([])
-188,dict_items([])
+188,"dict_items([(0, [Task<3779, HIGH>]), (1, [Task<7779, HIGH>]), (2, [Task<7780, HIGH>]), (3, [Task<3774, LOW>]), (4, [Task<3764, LOW>]), (5, [Task<3765, HIGH>]), (6, [Task<7765, HIGH>]), (7, [Task<7766, HIGH>]), (8, [Task<3761, HIGH>]), (9, [Task<7761, HIGH>]), (10, [Task<7762, HIGH>]), (11, [Task<3763, HIGH>]), (12, [Task<7763, HIGH>]), (13, [Task<7764, HIGH>]), (14, [Task<3773, HIGH>, Task<7774, HIGH>]), (15, [Task<7773, HIGH>])])"
 189,dict_items([])
-190,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+190,"dict_items([(0, [Task<3819, HIGH>]), (1, [Task<7819, HIGH>]), (2, [Task<7820, HIGH>]), (3, [Task<3801, HIGH>]), (4, [Task<7801, HIGH>]), (5, [Task<7802, HIGH>]), (6, [Task<3805, HIGH>, Task<3816, LOW>]), (7, [Task<7805, HIGH>]), (8, [Task<7806, HIGH>]), (9, []), (10, [Task<7817, HIGH>]), (11, [Task<3813, HIGH>, Task<7815, HIGH>, Task<3814, LOW>]), (12, [Task<7813, HIGH>, Task<7816, HIGH>]), (13, [Task<7814, HIGH>, Task<3817, HIGH>]), (14, [Task<3804, LOW>, Task<3815, HIGH>, Task<7818, HIGH>]), (15, [Task<3810, LOW>, Task<3802, LOW>, Task<3806, LOW>])])"
 191,dict_items([])
-192,dict_items([])
+192,"dict_items([(0, []), (1, []), (2, [Task<3855, HIGH>]), (3, [Task<7855, HIGH>]), (4, [Task<7856, HIGH>]), (5, [Task<3845, HIGH>]), (6, [Task<7845, HIGH>]), (7, [Task<7846, HIGH>]), (8, []), (9, [Task<3848, LOW>]), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 193,dict_items([])
-194,dict_items([])
+194,"dict_items([(0, [Task<3881, HIGH>]), (1, [Task<7881, HIGH>]), (2, [Task<7882, HIGH>]), (3, [Task<3891, HIGH>]), (4, [Task<7891, HIGH>]), (5, [Task<7892, HIGH>]), (6, []), (7, []), (8, []), (9, []), (10, []), (11, []), (12, []), (13, []), (14, []), (15, [])])"
 195,dict_items([])
-196,"dict_items([(0, []), (1, []), (2, []), (3, []), (4, []), (5, []), (6, []), (7, [])])"
+196,dict_items([])
 197,dict_items([])
 198,dict_items([])
 199,dict_items([])

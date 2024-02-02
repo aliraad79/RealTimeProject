@@ -54,7 +54,8 @@ class Processor:
         while sum(len(i.tasks) for i in self.cores) != 0:
             self.time += self.time_step
 
-            if self.is_overrun and self.time == self.overrun_time:
+            if self.is_overrun and self.time >= self.overrun_time:
+                self.is_overrun = False
                 self.reschedule(edf_vd=False)
 
             for core in self.cores:
@@ -89,10 +90,6 @@ class Processor:
 
             self.overrun_distributation = self.assign_algorithm.get_task_map(self.tasks)
         else:
-            tasks = []
-            for task_list in self.tasks_dict.values():
-                tasks.extend(task_list)
-
             # Migrate
             random_cores = random.sample(range(len(self.cores)), len(self.cores) // 2)
             soft_tasks = []
@@ -105,6 +102,8 @@ class Processor:
                 for i in range(len(self.cores))
                 if i not in random_cores and self.cores[i].is_host
             ]
+            print(random_cores, host_cores, {i.core_number:i.tasks for i in self.cores})
+
             # Best fit
             for task in soft_tasks:
                 lowest_utilized_core = sorted(
@@ -112,9 +111,9 @@ class Processor:
                 )[0]
 
                 self.cores[lowest_utilized_core].tasks.append(task)
-
+            
             self.overrun_distributation = {
-                core.core_number: core.tasks for core in self.cores
+                core.core_number: core.tasks.copy() for core in self.cores
             }
 
 

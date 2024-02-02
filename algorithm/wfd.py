@@ -14,7 +14,7 @@ class WFD(AssignAlgorithm):
         )
 
         assigned_processes = {i: 1 for i in range(self.num_processor)}
-        allocation = defaultdict(list)
+        allocation = {i: list() for i in range(self.num_processor)}
         for task_idx, task in enumerate(sorted_tasks):
             worst_inx = -1
             for j in range(self.num_processor):

@@ -46,8 +46,8 @@ def generate_uunifast(nsets: int, u: float, num_tasks: int):
             sumU = nextSumU
         utilizations.append(sumU)
         
-        if all(ut <= 1 for ut in utilizations):
-            sets.append(utilizations)
+        # if all(ut <= 1 for ut in utilizations):
+        sets.append(utilizations)
 
     return sets
 
